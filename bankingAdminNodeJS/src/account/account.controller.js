@@ -32,6 +32,8 @@ export const createAccount = async(req, res)=>{
         dataAccount.balance = new mongoose.Types.Decimal128(balance)
         dataAccount.balance = balance
 
+        
+
         let account = new Account(dataAccount)
         await account.save()
         return res.send({message: `Account created successfully for client ${dataUser.name} ${dataUser.surname}.`})

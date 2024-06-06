@@ -15,50 +15,22 @@ export const createUser = async (req, res) => {
         const code = generatePassword.generate({
             length: 12,
             numbers: true,
-            symbols: true,
+            symbols: false,
         })
         data.password = await encrypt(code)
         let user = new User(data)
         await user.save()
         console.log('La contraseña es '+code);
-        return res.send({ message: 'User created successfully, The password is '+code })
+        return res.send({ message: 'User created successfully, The password is '+code, user})
     } catch (err) {
         console.error(err)
         return res.status(500).send({ message: 'Error to create account' })
     }
 }
 
-export const initAdmin = async () => {
-    try {
-      const adminExists = await User.exists({ role: 'ADMIN' });
-  
-      if (!adminExists) {
-        const defaultAdminData = {
-          name: 'ADMINB',
-          surname: 'ADMINB',
-          username: 'ADMINB',
-          DPI: '1234567891234',
-          address: 'xxxxxxx',
-          phone: 'xxxxxxxx',
-          email: 'xxxxxxxx',
-          job: 'xxxxxxxx',
-          income: 'xxxxxxxx'
-        };
-
-        defaultAdminData.password = await encrypt('ADMINB');
-  
-        const defaultAdmin = new User(defaultAdminData);
-        await defaultAdmin.save();
-        console.log('Default admin created successfully.');
-      }
-    } catch (err) {
-      console.error('Error creating default admin:', err);
-    }
-}
-
 export const login = async(req, res)=>{
     try {
-        let {username, password} = req.body
+        let {username, password, role} = req.body
         let user = await User.findOne({username})
         if(user && await checkPassword(password, user.password)){
             let loggedUser ={

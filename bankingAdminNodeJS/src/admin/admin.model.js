@@ -2,7 +2,7 @@
 
 import { Schema, model } from 'mongoose'
 
-const userSchema = Schema({
+const adminSchema = Schema({
     name:{
         type: String,
         required: true
@@ -46,9 +46,14 @@ const userSchema = Schema({
     income:{
         type: String,
         required: true
+    },
+    role:{
+        type: String,
+        required: true,
+        enum: [ 'ADMIN' ]
     }
 }, {
     versionKey: false
 })
 
-export default model('user', userSchema)
+export default model('admin', adminSchema)

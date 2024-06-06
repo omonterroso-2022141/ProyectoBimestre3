@@ -9,7 +9,7 @@ import userRoutes from '../src/user/user.routes.js'
 import typeRoutes from '../src/accountType/accountType.routes.js'
 import accountRoutes from '../src/account/account.routes.js'
 import transactionRoutes from '../src/transactions/transactions.routes.js'
-
+import adminRoutes from '../src/admin/admin.routes.js'
 const app = express()
 config()
 const port = process.env.PORT || 3200
@@ -24,6 +24,7 @@ app.use('/user', userRoutes)
 app.use('/type', typeRoutes)
 app.use('/account', accountRoutes)
 app.use('/transactions', transactionRoutes)
+app.use('/admin', adminRoutes)
 
 export const initServer =()=>{
     app.listen(port)
