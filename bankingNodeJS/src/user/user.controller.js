@@ -18,7 +18,6 @@ export const createUser = async (req, res) => {
             symbols: true,
         })
         data.password = await encrypt(code)
-        data.role = 'CLIENT'
         let user = new User(data)
         await user.save()
         console.log('La contraseña es '+code);
@@ -26,35 +25,6 @@ export const createUser = async (req, res) => {
     } catch (err) {
         console.error(err)
         return res.status(500).send({ message: 'Error to create account' })
-    }
-}
-
-export const initAdmin = async () => {
-    try {
-      const adminExists = await User.exists({ role: 'ADMIN' });
-  
-      if (!adminExists) {
-        const defaultAdminData = {
-          name: 'ADMINB',
-          surname: 'ADMINB',
-          username: 'ADMINB',
-          role: 'ADMIN',
-          DPI: '123456789123',
-          address: 'xxxxxxx',
-          phone: 'xxxxxxxx',
-          email: 'xxxxxxxx',
-          job: 'xxxxxxxx',
-          income: 'xxxxxxxx'
-        };
-
-        defaultAdminData.password = await encrypt('ADMINB');
-  
-        const defaultAdmin = new User(defaultAdminData);
-        await defaultAdmin.save();
-        console.log('Default admin created successfully.');
-      }
-    } catch (err) {
-      console.error('Error creating default admin:', err);
     }
 }
 

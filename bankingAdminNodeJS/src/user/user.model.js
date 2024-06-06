@@ -47,12 +47,6 @@ const userSchema = Schema({
         type: String,
         required: true
     },
-    role:{
-        type: String,
-        uppercase: true,
-        enum: ['CLIENT'],
-        required: true
-    }
 }, {
     versionKey: false
 })

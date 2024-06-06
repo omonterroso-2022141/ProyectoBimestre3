@@ -18,7 +18,6 @@ export const createUser = async (req, res) => {
             symbols: true,
         })
         data.password = await encrypt(code)
-        data.role = 'CLIENT'
         let user = new User(data)
         await user.save()
         console.log('La contraseña es '+code);
@@ -38,8 +37,7 @@ export const initAdmin = async () => {
           name: 'ADMINB',
           surname: 'ADMINB',
           username: 'ADMINB',
-          role: 'ADMIN',
-          DPI: '123456789123',
+          DPI: '1234567891234',
           address: 'xxxxxxx',
           phone: 'xxxxxxxx',
           email: 'xxxxxxxx',
