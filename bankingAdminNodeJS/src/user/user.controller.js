@@ -1,6 +1,6 @@
 'use strict';
 
-import { checkPassword, encrypt } from '../utils/validator.js'
+import { checkPassword, encrypt, checkUpdate } from '../utils/validator.js'
 import User from './user.model.js'
 import { generateJWT } from '../utils/jwt.js'
 import generatePassword from 'generate-password'
@@ -53,5 +53,42 @@ export const login = async(req, res)=>{
     } catch (err) {
         console.error(err);
         return res.status(500).send({message: 'Error to login'})
+    }
+}
+
+export const getUsers = async(req, res)=>{
+    try {
+        const data = await User.find()
+        return res.send({message: 'Users found', data})
+    } catch (err) {
+        console.error(err);
+        return res.status(500).send({message: 'Error to get users'})
+    }
+}
+
+export const editUser = async(req, res)=>{
+    try {
+        let {id} = req.params
+        let data = req.body
+        let bandera = false
+        if(data.password.length > 0 || data.DPI.length > 0) {
+            bandera = false
+            console.log('Datos encontrados');
+        }else{
+            bandera = true
+            console.log('Datos no encontrados');
+        }
+        if(bandera == false) return res.status(400).send({message: 'You dont have permission to edit this data'})
+        let update = checkUpdate(data, id)
+        let updateUser = await User.findOneAndUpdate(
+            {_id: id},
+            data,
+            {new : true}
+        )
+        if(!updateUser) if(!update) return res.status(400).send({message: 'User not found and not updated'})
+        return res.send({message: 'User updated successfully', updateUser})
+    } catch (err) {
+        console.error(err);
+        return res.status(500).send({message: 'Error to edit user'})
     }
 }

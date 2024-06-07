@@ -12,7 +12,7 @@ export const makeTransaction = async(req, res)=>{
         let toAccount = await Account.findById(data.toAccount)
         if(!toAccount) return res.status(404).send({message: 'Recipient account not found.'})
         //Buscamos la cuenta del receptor
-        let fromAccount = await Account.findById(data.forAccount)
+        let fromAccount = await Account.findById(data.fromAccount)
         if(!fromAccount) return res.status(404).send({message: 'Your account not found'})
         //Cantidad de transaccion controlada arbitrariamente.
         const transferAmount = new Decimal(data.amount)

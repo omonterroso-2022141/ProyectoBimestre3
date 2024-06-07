@@ -23,11 +23,7 @@ export const checkUpdate =(data, userId)=>{
         if(
             Object.entries(data).length === 0 ||
             data.username ||
-            data.username == '' ||
-            data.password ||
-            data.password == ''||
-            data.role ||
-            data.role == ''
+            data.username == ''
             ) return false
             return true
     }else{
