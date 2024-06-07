@@ -5,7 +5,6 @@ import Account from '../account/account.model.js'
 import User from '../user/user.model.js' 
 import Decimal from 'decimal.js'
 import mongoose from 'mongoose'
-import { generateJWT } from '../utils/jwt/generateJWT.js'
 
 export const makeTransaction = async(req, res)=>{
     try {
