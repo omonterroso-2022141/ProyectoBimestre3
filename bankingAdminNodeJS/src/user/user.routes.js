@@ -12,5 +12,7 @@ api.get('/listUsers', [validateJwt, isAdmin], listUser)
 api.put('/updateUser/:id', [validateJwt, isAdmin], updateUser)
 api.delete('/deleteUser/:id', [validateJwt, isAdmin], deleteUser)
 api.post('/login', login)
+api.get('/getUsers', [ validateJwt, isAdmin ], getUsers)
+api.put('/updateUser/:id', [ validateJwt, isAdmin ], editUser)
 
 export default api
