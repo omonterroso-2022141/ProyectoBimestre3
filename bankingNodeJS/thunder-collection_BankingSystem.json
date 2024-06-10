@@ -1,87 +1,29 @@
 {
     "clientName": "Thunder Client",
     "collectionName": "BankingSystem",
-    "collectionId": "5446e3c1-73d0-4200-84ab-b9811179998f",
-    "dateExported": "2024-05-31T23:26:46.347Z",
+    "collectionId": "fe123e1f-08a3-4613-b0d6-1f16cacf5364",
+    "dateExported": "2024-06-10T16:30:55.882Z",
     "version": "1.2",
     "folders": [
         {
-            "_id": "14c72d44-aff0-4a29-866c-512b024a9251",
+            "_id": "a88b9e03-9116-40c2-8161-1b808da89466",
             "name": "User",
             "containerId": "",
-            "created": "2024-05-31T19:32:52.188Z",
+            "created": "2024-06-10T01:31:40.227Z",
             "sortNum": 10000
         }
     ],
     "requests": [
         {
-            "_id": "7989c3bc-b2a2-4ab3-a694-502271fd72b3",
-            "colId": "5446e3c1-73d0-4200-84ab-b9811179998f",
-            "containerId": "14c72d44-aff0-4a29-866c-512b024a9251",
-            "name": "Create",
-            "url": "/user/register",
-            "method": "POST",
-            "sortNum": 10000,
-            "created": "2024-05-31T19:33:00.428Z",
-            "modified": "2024-05-31T22:20:16.064Z",
-            "headers": [],
-            "body": {
-                "type": "formencoded",
-                "raw": "",
-                "form": [
-                    {
-                        "name": "name",
-                        "value": "Julián"
-                    },
-                    {
-                        "name": "surname",
-                        "value": "García"
-                    },
-                    {
-                        "name": "username",
-                        "value": "jgarcia"
-                    },
-                    {
-                        "name": "DPI",
-                        "value": "321654987123"
-                    },
-                    {
-                        "name": "address",
-                        "value": "1av 3-54 Zona 1 Ciudad de Guatemala"
-                    },
-                    {
-                        "name": "phone",
-                        "value": "12345678"
-                    },
-                    {
-                        "name": "email",
-                        "value": "jgarcia@gmail.com"
-                    },
-                    {
-                        "name": "password",
-                        "value": "12345678"
-                    },
-                    {
-                        "name": "job",
-                        "value": "Programador"
-                    },
-                    {
-                        "name": "income",
-                        "value": "1300.00"
-                    }
-                ]
-            }
-        },
-        {
-            "_id": "7ae9c31c-24fb-4c57-b49c-c3546a4724a8",
-            "colId": "5446e3c1-73d0-4200-84ab-b9811179998f",
-            "containerId": "14c72d44-aff0-4a29-866c-512b024a9251",
+            "_id": "e92ba30c-e481-4c7d-bc92-9dc81a98ad42",
+            "colId": "fe123e1f-08a3-4613-b0d6-1f16cacf5364",
+            "containerId": "a88b9e03-9116-40c2-8161-1b808da89466",
             "name": "Login",
             "url": "/user/login",
             "method": "POST",
             "sortNum": 20000,
-            "created": "2024-05-31T22:01:23.203Z",
-            "modified": "2024-05-31T22:20:28.773Z",
+            "created": "2024-06-10T01:31:40.229Z",
+            "modified": "2024-06-10T01:50:24.949Z",
             "headers": [],
             "body": {
                 "type": "formencoded",
@@ -89,11 +31,11 @@
                 "form": [
                     {
                         "name": "username",
-                        "value": "ADMINB"
+                        "value": "walvarado"
                     },
                     {
                         "name": "password",
-                        "value": "ADMINB"
+                        "value": "XeaRsqDLLsfT"
                     }
                 ]
             }
@@ -104,5 +46,5 @@
             "baseUrl": "localhost:2880"
         }
     },
-    "ref": "uubukgrQ3Zt3XFOxgl6_Z_0hQq3qi2DJ60WN31mGmfq0EjyoiB6M_MyDGqm-0p0Z6yYoEiiCLT1oFgXkpM6LSQ"
+    "ref": "NmsiatyfQKT4dREasPAz2P2z14pVRKELp466T4nmS7xCBhEKzOvCLhtz5Q9poJzZ8DxbujvO-mGV7dpsTB1Dow"
 }

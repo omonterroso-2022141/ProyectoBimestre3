@@ -1,0 +1,277 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "BankingSystemAdmin",
+    "collectionId": "ecac47ca-03ac-4661-a091-f9c3f470e438",
+    "dateExported": "2024-06-10T16:30:40.851Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "9021f049-e0cc-4caa-b580-eb19d0164fd1",
+            "name": "User",
+            "containerId": "",
+            "created": "2024-06-06T16:46:05.097Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "71fe917e-633b-4ddd-aec7-58dad289962f",
+            "name": "Account",
+            "containerId": "",
+            "created": "2024-06-06T16:46:05.099Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "78888116-8254-4189-ba17-79b166211766",
+            "name": "Type Account",
+            "containerId": "",
+            "created": "2024-06-06T16:46:05.100Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "8b6adf47-8f85-42d1-a2ff-3d209d8f72b1",
+            "name": "Movements",
+            "containerId": "",
+            "created": "2024-06-06T16:46:05.101Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "ff8e4992-977e-4224-b949-8c8af4cc7af2",
+            "colId": "ecac47ca-03ac-4661-a091-f9c3f470e438",
+            "containerId": "9021f049-e0cc-4caa-b580-eb19d0164fd1",
+            "name": "Create user",
+            "url": "/user/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-06-06T16:46:05.098Z",
+            "modified": "2024-06-10T06:30:48.793Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjYyN2E2ODViN2FmMGY4YjI1MmVmNjAiLCJuYW1lIjoiQURNSU5CIiwic3VybmFtZSI6IkFETUlOQiIsIkRQSSI6IjEyMzQ1Njc4OTEyMzQiLCJhZGRyZXNzIjoieHh4eHh4eCIsInBob25lIjoieHh4eHh4eHgiLCJlbWFpbCI6Inh4eHh4eHh4Iiwiam9iIjoieHh4eHh4eHgiLCJpbmNvbWUiOiJ4eHh4eHh4eCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxODAwMTAzOSwiZXhwIjoxNzE4MDExODM5fQ.07zCcKu0BgSc1qr7cC7leRSJnCB-1jnZeiBEUKWwvYc"
+                }
+            ],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "William"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Alvarado"
+                    },
+                    {
+                        "name": "username",
+                        "value": "walvarado"
+                    },
+                    {
+                        "name": "DPI",
+                        "value": "5472089340108"
+                    },
+                    {
+                        "name": "address",
+                        "value": "1av 3-54 Zona 1 Ciudad de Guatemala"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "email",
+                        "value": "walvarado@gmail.com"
+                    },
+                    {
+                        "name": "job",
+                        "value": "Constructor"
+                    },
+                    {
+                        "name": "income",
+                        "value": "900.00"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "4d6716b4-f786-41bb-8540-37c0cbbee40c",
+            "colId": "ecac47ca-03ac-4661-a091-f9c3f470e438",
+            "containerId": "9021f049-e0cc-4caa-b580-eb19d0164fd1",
+            "name": "Login admin",
+            "url": "/admin/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-06-06T16:46:05.099Z",
+            "modified": "2024-06-10T01:47:39.560Z",
+            "headers": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "ADMINB"
+                    },
+                    {
+                        "name": "password",
+                        "value": "ADMINB"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "630544e9-af78-4d17-8a74-fb1c0f34685a",
+            "colId": "ecac47ca-03ac-4661-a091-f9c3f470e438",
+            "containerId": "78888116-8254-4189-ba17-79b166211766",
+            "name": "Add",
+            "url": "/type/add",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-06-06T16:46:05.100Z",
+            "modified": "2024-06-06T16:46:05.100Z",
+            "headers": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Cuenta corriente (De cheques)"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Cuenta destinada a la acumulación de ahorros. Ofrece intereses sobre el saldo mantenido en la cuenta."
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "969cd226-7d5a-432e-9f96-68105fcb5902",
+            "colId": "ecac47ca-03ac-4661-a091-f9c3f470e438",
+            "containerId": "71fe917e-633b-4ddd-aec7-58dad289962f",
+            "name": "Create account",
+            "url": "/account/create",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-06-06T16:46:05.101Z",
+            "modified": "2024-06-06T16:46:05.101Z",
+            "headers": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "userId",
+                        "value": "665c0bca1aa90946f93c764c"
+                    },
+                    {
+                        "name": "accountType",
+                        "value": "665b5c6b318c6bee1a10b569"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "6e011d7a-8425-4cb8-81e1-2b776ee533bb",
+            "colId": "ecac47ca-03ac-4661-a091-f9c3f470e438",
+            "containerId": "8b6adf47-8f85-42d1-a2ff-3d209d8f72b1",
+            "name": "Make transaction",
+            "url": "/transactions/transaction",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-06-06T16:46:05.102Z",
+            "modified": "2024-06-06T16:46:05.102Z",
+            "headers": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "toAccount",
+                        "value": "665c15900dbb4c10f5f9df3a"
+                    },
+                    {
+                        "name": "forAccount",
+                        "value": "665bafd028336b7e5ccc2ff5"
+                    },
+                    {
+                        "name": "amount",
+                        "value": "100.50"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "f29817db-3f92-40b0-a2fc-f9561bf188f1",
+            "colId": "ecac47ca-03ac-4661-a091-f9c3f470e438",
+            "containerId": "9021f049-e0cc-4caa-b580-eb19d0164fd1",
+            "name": "List users",
+            "url": "/user/listUsers",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-06-10T01:52:26.636Z",
+            "modified": "2024-06-10T01:54:22.282Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjYyN2E2ODViN2FmMGY4YjI1MmVmNjAiLCJuYW1lIjoiQURNSU5CIiwic3VybmFtZSI6IkFETUlOQiIsIkRQSSI6IjEyMzQ1Njc4OTEyMzQiLCJhZGRyZXNzIjoieHh4eHh4eCIsInBob25lIjoieHh4eHh4eHgiLCJlbWFpbCI6Inh4eHh4eHh4Iiwiam9iIjoieHh4eHh4eHgiLCJpbmNvbWUiOiJ4eHh4eHh4eCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxNzk4NDA1OSwiZXhwIjoxNzE3OTk0ODU5fQ.pbaM2yruCaqMjIp86-XN3DcSzJ6iQHlIKjZ1C3mhu3s"
+                }
+            ]
+        },
+        {
+            "_id": "85387ee4-7f37-46bc-baa0-775251b69e4f",
+            "colId": "ecac47ca-03ac-4661-a091-f9c3f470e438",
+            "containerId": "9021f049-e0cc-4caa-b580-eb19d0164fd1",
+            "name": "Update user",
+            "url": "/user/updateUser/66665b4546d0b67c41cfd25a",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2024-06-10T06:04:07.644Z",
+            "modified": "2024-06-10T06:11:45.515Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjYyN2E2ODViN2FmMGY4YjI1MmVmNjAiLCJuYW1lIjoiQURNSU5CIiwic3VybmFtZSI6IkFETUlOQiIsIkRQSSI6IjEyMzQ1Njc4OTEyMzQiLCJhZGRyZXNzIjoieHh4eHh4eCIsInBob25lIjoieHh4eHh4eHgiLCJlbWFpbCI6Inh4eHh4eHh4Iiwiam9iIjoieHh4eHh4eHgiLCJpbmNvbWUiOiJ4eHh4eHh4eCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxNzk5OTYzOCwiZXhwIjoxNzE4MDEwNDM4fQ.WGql-q16IqriGEYMFEfIRwk3G_X1Eo0bZng_olRqiZ0"
+                }
+            ],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "surname",
+                        "value": "Lopez"
+                    },
+                    {
+                        "name": "username",
+                        "value": "wlopez"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "d0213a8d-1e8f-4290-b7ff-cd1bab90e849",
+            "colId": "ecac47ca-03ac-4661-a091-f9c3f470e438",
+            "containerId": "9021f049-e0cc-4caa-b580-eb19d0164fd1",
+            "name": "Delete user",
+            "url": "/user/deleteUser/66669d986711e69b8d1a4d28",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2024-06-10T06:29:24.920Z",
+            "modified": "2024-06-10T06:31:11.358Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjYyN2E2ODViN2FmMGY4YjI1MmVmNjAiLCJuYW1lIjoiQURNSU5CIiwic3VybmFtZSI6IkFETUlOQiIsIkRQSSI6IjEyMzQ1Njc4OTEyMzQiLCJhZGRyZXNzIjoieHh4eHh4eCIsInBob25lIjoieHh4eHh4eHgiLCJlbWFpbCI6Inh4eHh4eHh4Iiwiam9iIjoieHh4eHh4eHgiLCJpbmNvbWUiOiJ4eHh4eHh4eCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxODAwMTAzOSwiZXhwIjoxNzE4MDExODM5fQ.07zCcKu0BgSc1qr7cC7leRSJnCB-1jnZeiBEUKWwvYc"
+                }
+            ]
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2656"
+        }
+    },
+    "ref": "_8LB_-KRKRM4yBELIBML_DmjqN_jaW6jWMOsY-qaJzTn7JaU5LrtcmvSZBNoYVNDjDnv9o5xvMuH_u1a0zGPRw"
+}
