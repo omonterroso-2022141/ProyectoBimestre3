@@ -9,7 +9,7 @@ import userRoutes from '../src/user/user.routes.js'
 import typeRoutes from '../src/accountType/accountType.routes.js'
 import accountRoutes from '../src/account/account.routes.js'
 import transactionRoutes from '../src/transactions/transactions.routes.js'
-import adminRoutes from '../src/admin/admin.routes.js'
+import adminRoutes from '../src/admin/admin.routes.js'  
 import cardRoutes from '../src/card/card.routes.js'
 
 const app = express()
@@ -27,7 +27,7 @@ app.use('/type', typeRoutes)
 app.use('/account', accountRoutes)
 app.use('/transactions', transactionRoutes)
 app.use('/admin', adminRoutes)
-app.use('/card',  cardRoutes)
+app.use('/card', cardRoutes)
 
 export const initServer =()=>{
     app.listen(port)

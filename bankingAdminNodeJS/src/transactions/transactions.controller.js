@@ -43,13 +43,12 @@ export const makeTransaction = async(req, res)=>{
     }
 }
 
-export const listTransaction = async(req, res)=>{
+export const listTransactions = async(req, res)=>{
     try {
-        const list_transactions = await Transaction.find()
-        if(list_transactions.length == 0) return res.status(404).send({message: 'List transactions not found'})
-        return res.send({message: 'List transactions', list_transactions})
+        const transactions = await Transaction.find()
+        return res.send({message: 'Transactions found', transactions})
     } catch (err) {
         console.error(err);
-        return res.status(500).send({message: 'Error to list transaction'})
+        return res.status(500).send({message: 'Error to list transactions.'})
     }
 }

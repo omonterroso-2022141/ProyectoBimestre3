@@ -12,7 +12,7 @@ export const login = async(req, res)=>{
     try {
         let {username, password} = req.body
         let user = await User.findOne({username})
-        if(!user) return res.status(409).send({message: 'Username not found'})  
+        if(!user) return res.status(409).send({message: 'Username not found'})
         if(user && await checkPassword(password, user.password)){
             let loggedUser ={
                 uid: user._id,
@@ -29,6 +29,8 @@ export const login = async(req, res)=>{
             }
             let token = await generateJWT(loggedUser)
             return res.send({message: `Welcome ${user.name}`, token})
+        }else{
+            return res.status(409).send({message: 'The password or user not coincident'})
         }
     } catch (err) {
         console.error(err);

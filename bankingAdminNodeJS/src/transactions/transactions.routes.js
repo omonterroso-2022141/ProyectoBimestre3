@@ -1,12 +1,12 @@
 'use strict'
 
 import { Router } from 'express'
-import { listTransaction, makeTransaction } from './transactions.controller.js'
-import { validateJwt } from '../middlewares/validate.jwt.js'
+import { listTransactions, makeTransaction } from './transactions.controller.js'
+import { isAdmin, validateJwt } from '../middlewares/validate.jwt.js'
 
 const api = Router()
 
 api.post('/make-transaction', makeTransaction)
-api.get('/listTransactions', listTransaction)
+api.get('/listTransactions', [validateJwt, isAdmin], listTransactions)
 
 export default api
