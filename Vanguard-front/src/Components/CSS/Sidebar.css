@@ -1,0 +1,28 @@
+.sidebar-content{
+    background-color: #222831;
+    color: white;
+    width: 25vh;
+    height: calc(100vh - 7vh);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-content a{
+    color: white;
+    text-decoration: none;
+    padding-left: 2vh;
+    margin-left: 10px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.sidebar-content a:hover{
+    background-color: #76ABAE;
+}
+
+.sidebar-content a img{
+    width: 3vh;
+}

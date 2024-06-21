@@ -1,0 +1,27 @@
+.home-body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://imarticuslearning.weebly.com/uploads/4/9/5/4/49548591/8319468_orig.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.info-text{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5vh;
+}
+
+.oficial-link{
+    background-color: rgba(52, 56, 56, .8);
+    width: 55vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.oficial-link a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3.5vh;
+    font-weight: bold;
+}
