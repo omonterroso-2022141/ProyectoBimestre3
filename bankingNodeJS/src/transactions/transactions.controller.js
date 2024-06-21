@@ -2,7 +2,8 @@
 
 import Transaction from './transactions.model.js'
 import Account from '../account/account.model.js'
-import User from '../user/user.model.js' 
+import User from '../user/user.model.js'
+import { validateJwt } from '../../../bankingAdminNodeJS/src/middlewares/validate.jwt.js'
 import Decimal from 'decimal.js'
 import mongoose from 'mongoose'
 
@@ -50,3 +51,19 @@ export const makeTransaction = async(req, res)=>{
     }
 }
 
+export const listMyTransactions = async(req,res)=>{
+    try {
+        let idToken = req.uid
+        console.log('El token de usuario es ',idToken);
+        let user = await User.findById(idToken)
+        if(!user) return res.status(404).send({message: 'The user not found'})
+        let dataAccount = await Account.findOne({userId: idToken})
+        if(!dataAccount) return res.status(404).send({message: 'Account not found'})
+        const myTransactions = await Transaction.find({toAccount: dataAccount._id})
+        if(myTransactions.length == 0) return res.status(404).send({message: 'Your account has no transactions'})
+        return res.send({message: 'Your account transactions are: ',myTransactions})
+    } catch (err) {
+        console.error(err);
+        return res.status(500).send({message: 'Error to list your transactions'})
+    }
+}

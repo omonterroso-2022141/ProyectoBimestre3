@@ -1,37 +1,68 @@
 {
     "clientName": "Thunder Client",
     "collectionName": "BankingSystem",
-    "collectionId": "37f5c5ce-f09c-4942-96aa-52a7aa5ef7a7",
-    "dateExported": "2024-06-10T21:50:46.847Z",
+    "collectionId": "94e88087-2cf2-4175-b6c5-465ce647bd0b",
+    "dateExported": "2024-06-21T17:11:58.133Z",
     "version": "1.2",
     "folders": [
         {
-            "_id": "69819a23-285c-405d-b567-5285997a1887",
+            "_id": "6f8f7f5e-d451-4732-8403-33a16df2b7ee",
             "name": "User",
             "containerId": "",
-            "created": "2024-06-10T20:28:26.686Z",
+            "created": "2024-06-11T03:02:31.298Z",
             "sortNum": 10000
         },
         {
-            "_id": "10002919-0746-493d-b893-78f291e2d171",
-            "name": "Movements",
+            "_id": "6a8c1324-452d-4fc5-b658-69709aaf462a",
+            "name": "Transactions",
             "containerId": "",
-            "created": "2024-06-10T20:35:08.864Z",
+            "created": "2024-06-11T03:14:27.203Z",
             "sortNum": 20000
         }
     ],
     "requests": [
         {
-            "_id": "0768038d-81f8-4748-9f9f-f510fd1d7a58",
-            "colId": "37f5c5ce-f09c-4942-96aa-52a7aa5ef7a7",
-            "containerId": "10002919-0746-493d-b893-78f291e2d171",
+            "_id": "80ead73c-e301-48ce-b6a3-ab345c1d04d0",
+            "colId": "94e88087-2cf2-4175-b6c5-465ce647bd0b",
+            "containerId": "6f8f7f5e-d451-4732-8403-33a16df2b7ee",
+            "name": "Login",
+            "url": "/user/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-06-11T03:02:31.298Z",
+            "modified": "2024-06-15T06:14:53.835Z",
+            "headers": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "wlopez"
+                    },
+                    {
+                        "name": "password",
+                        "value": "XeaRsqDLLsfT"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "272ec24a-47b2-4678-ae24-5cbd1e29a28f",
+            "colId": "94e88087-2cf2-4175-b6c5-465ce647bd0b",
+            "containerId": "6a8c1324-452d-4fc5-b658-69709aaf462a",
             "name": "Make transaction",
             "url": "/transactions/transaction",
             "method": "POST",
-            "sortNum": 10000,
-            "created": "2024-06-10T20:35:13.617Z",
-            "modified": "2024-06-10T20:35:13.617Z",
-            "headers": [],
+            "sortNum": 60000,
+            "created": "2024-06-11T03:14:27.221Z",
+            "modified": "2024-06-15T22:54:13.501Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjY2NWI0NTQ2ZDBiNjdjNDFjZmQyNWEiLCJuYW1lIjoiV2lsbGlhbSIsInN1cm5hbWUiOiJMb3BleiIsInVzZXJuYW1lIjoid2xvcGV6IiwiRFBJIjoiNTQ3MjA4OTM0MDEwOCIsImFkZHJlc3MiOiIxYXYgMy01NCBab25hIDEgQ2l1ZGFkIGRlIEd1YXRlbWFsYSIsInBob25lIjoiMTIzNDU2NzgiLCJlbWFpbCI6IndhbHZhcmFkb0BnbWFpbC5jb20iLCJqb2IiOiJDb25zdHJ1Y3RvciIsImluY29tZSI6IjkwMC4wMCIsImlhdCI6MTcxODQ5MjA0MSwiZXhwIjoxNzE4NTAyODQxfQ.O83HmdycCCq6EVUT-iKTN693gyrYN_QIcDFzzBE7hdc"
+                }
+            ],
             "body": {
                 "type": "formencoded",
                 "raw": "",
@@ -52,30 +83,21 @@
             }
         },
         {
-            "_id": "63fbaa30-98ab-4b6f-8aa1-1469b856b4de",
-            "colId": "37f5c5ce-f09c-4942-96aa-52a7aa5ef7a7",
-            "containerId": "69819a23-285c-405d-b567-5285997a1887",
-            "name": "Login",
-            "url": "/user/login",
-            "method": "POST",
-            "sortNum": 20000,
-            "created": "2024-06-10T20:28:26.686Z",
-            "modified": "2024-06-10T20:28:26.686Z",
-            "headers": [],
-            "body": {
-                "type": "formencoded",
-                "raw": "",
-                "form": [
-                    {
-                        "name": "username",
-                        "value": "walvarado"
-                    },
-                    {
-                        "name": "password",
-                        "value": "XeaRsqDLLsfT"
-                    }
-                ]
-            }
+            "_id": "178c096d-bbe9-42c9-92ad-6e274b25030e",
+            "colId": "94e88087-2cf2-4175-b6c5-465ce647bd0b",
+            "containerId": "6a8c1324-452d-4fc5-b658-69709aaf462a",
+            "name": "list my transactions",
+            "url": "/transactions/listMyTransactions",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-06-15T06:05:40.966Z",
+            "modified": "2024-06-16T02:09:05.111Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjY2NWI0NTQ2ZDBiNjdjNDFjZmQyNWEiLCJuYW1lIjoiV2lsbGlhbSIsInN1cm5hbWUiOiJMb3BleiIsInVzZXJuYW1lIjoid2xvcGV6IiwiRFBJIjoiNTQ3MjA4OTM0MDEwOCIsImFkZHJlc3MiOiIxYXYgMy01NCBab25hIDEgQ2l1ZGFkIGRlIEd1YXRlbWFsYSIsInBob25lIjoiMTIzNDU2NzgiLCJlbWFpbCI6IndhbHZhcmFkb0BnbWFpbC5jb20iLCJqb2IiOiJDb25zdHJ1Y3RvciIsImluY29tZSI6IjkwMC4wMCIsImlhdCI6MTcxODUwMzczNiwiZXhwIjoxNzE4NTE0NTM2fQ.1n5PfBuIUr_yvct_oNN96s2PvBPTKgfZHAK1ahFmUPo"
+                }
+            ]
         }
     ],
     "settings": {
@@ -83,5 +105,5 @@
             "baseUrl": "localhost:2880"
         }
     },
-    "ref": "nHgGLf095R_UzY297o4U2p24O1-5_hvG0XUA8IaPV7KGvIvfL3tZTw-FOycWa2FlsWzVpWbIPMZ5rFZRVKDZ7Q"
+    "ref": "1rGlkRtsA-5vDcwaWFhuXAoNEfgmYfcsvxPnx3-qAu6rUdiRMlFGs7ldlTd-a_X0WOF0P5TFiKivcoXoxctn_A"
 }

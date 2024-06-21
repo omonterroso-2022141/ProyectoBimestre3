@@ -1,14 +1,18 @@
-import Card from './card.model.js'
-import Decimal from 'decimal.js'
+'use strict';
 
-export const createCard = async(req,res)=>{
+import Card from '../card/card.model.js';
+import User from '../user/user.model.js';
+
+export const createCard = async (req, res) => {
     try {
-        let data = req.body
-        let card = new Card.save(data)
-        if(!card) return res.status(404).send({message: 'Data for card not found'})
-        data.cardNumber = 
+        let data = req.body;
+        // cardNumber, userId, dueDate, CVV, issued
+        data.userId = req.uid
+        //Se agrega la fecha de vencimiento de la tarjeta
+        let due = new Date(data.dueDate)
+        dueDate.setHours(0,0,0,0)
     } catch (err) {
         console.error(err);
-        return res.status(500).send({message: 'Error creating card'})
+        return res.status(500).send({ message: 'Error creating card' });
     }
 }

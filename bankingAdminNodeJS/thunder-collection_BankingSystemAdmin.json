@@ -1,54 +1,61 @@
 {
     "clientName": "Thunder Client",
     "collectionName": "BankingSystemAdmin",
-    "collectionId": "d0d308a5-859e-4af9-af32-58316e58e6b6",
-    "dateExported": "2024-06-10T21:50:35.855Z",
+    "collectionId": "d2c9e1bb-f320-4e14-b841-da03e5bc3b04",
+    "dateExported": "2024-06-21T17:11:46.769Z",
     "version": "1.2",
     "folders": [
         {
-            "_id": "9a28eda1-f4a3-40e9-8f77-d489b59b499f",
+            "_id": "fe787a4c-dcdd-46ec-b60e-aea4aaac1000",
             "name": "User",
             "containerId": "",
-            "created": "2024-06-10T20:28:18.053Z",
+            "created": "2024-06-11T03:02:23.088Z",
             "sortNum": 10000
         },
         {
-            "_id": "a2479bc8-6197-44db-8cea-dfe5cf820aaf",
+            "_id": "0762c7df-7a81-4c87-9404-39fa42951c2c",
             "name": "Account",
             "containerId": "",
-            "created": "2024-06-10T20:28:18.054Z",
+            "created": "2024-06-11T03:02:23.089Z",
             "sortNum": 20000
         },
         {
-            "_id": "a8d9109a-2883-442a-b62a-b54a8fdef6e9",
+            "_id": "60357d71-7818-4b38-8026-835fd9da9115",
             "name": "Type Account",
             "containerId": "",
-            "created": "2024-06-10T20:28:18.055Z",
+            "created": "2024-06-11T03:02:23.090Z",
             "sortNum": 30000
         },
         {
-            "_id": "da16937e-5ffe-4a46-8499-66a5227c6fb1",
+            "_id": "b44fc0e6-e75d-4d57-b362-8dde6748b255",
             "name": "Movements",
             "containerId": "",
-            "created": "2024-06-10T20:28:18.056Z",
+            "created": "2024-06-15T04:08:28.461Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "64e2f010-8dbb-4e3d-b18f-a24dd588130e",
+            "name": "Card",
+            "containerId": "",
+            "created": "2024-06-15T04:08:51.391Z",
             "sortNum": 40000
         }
     ],
     "requests": [
         {
-            "_id": "422d888a-3640-4668-a0cb-14ee71f953a6",
-            "colId": "d0d308a5-859e-4af9-af32-58316e58e6b6",
-            "containerId": "9a28eda1-f4a3-40e9-8f77-d489b59b499f",
+            "_id": "53fcc727-8754-486d-a52d-cec7b4db77a6",
+            "colId": "d2c9e1bb-f320-4e14-b841-da03e5bc3b04",
+            "containerId": "fe787a4c-dcdd-46ec-b60e-aea4aaac1000",
             "name": "Create user",
             "url": "/user/register",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-06-10T20:28:18.053Z",
-            "modified": "2024-06-10T21:36:35.663Z",
+            "created": "2024-06-11T03:02:23.088Z",
+            "modified": "2024-06-11T03:02:23.088Z",
             "headers": [
                 {
                     "name": "token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjYyM2E1OTI4YjFlMTRlZmRmYjU2YmEiLCJuYW1lIjoiQURNSU5CIiwic3VybmFtZSI6IkFETUlOQiIsIkRQSSI6IjEyMzQ1Njc4OTEyMzQiLCJhZGRyZXNzIjoieHh4eHh4eCIsInBob25lIjoieHh4eHh4eHgiLCJlbWFpbCI6Inh4eHh4eHh4Iiwiam9iIjoieHh4eHh4eHgiLCJpbmNvbWUiOiJ4eHh4eHh4eCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxODA1MTg1MiwiZXhwIjoxNzE4MDYyNjUyfQ.fOeJg5Mq-7fUNPIOIBrP1oBqV_GF85_e3vw-rP0t7-Y"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjYyN2E2ODViN2FmMGY4YjI1MmVmNjAiLCJuYW1lIjoiQURNSU5CIiwic3VybmFtZSI6IkFETUlOQiIsIkRQSSI6IjEyMzQ1Njc4OTEyMzQiLCJhZGRyZXNzIjoieHh4eHh4eCIsInBob25lIjoieHh4eHh4eHgiLCJlbWFpbCI6Inh4eHh4eHh4Iiwiam9iIjoieHh4eHh4eHgiLCJpbmNvbWUiOiJ4eHh4eHh4eCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxODAwMTAzOSwiZXhwIjoxNzE4MDExODM5fQ.07zCcKu0BgSc1qr7cC7leRSJnCB-1jnZeiBEUKWwvYc"
                 }
             ],
             "body": {
@@ -57,19 +64,19 @@
                 "form": [
                     {
                         "name": "name",
-                        "value": "Jose"
+                        "value": "William"
                     },
                     {
                         "name": "surname",
-                        "value": "De Leon"
+                        "value": "Alvarado"
                     },
                     {
                         "name": "username",
-                        "value": "jdeleon"
+                        "value": "walvarado"
                     },
                     {
                         "name": "DPI",
-                        "value": "3216549871234"
+                        "value": "5472089340108"
                     },
                     {
                         "name": "address",
@@ -81,7 +88,7 @@
                     },
                     {
                         "name": "email",
-                        "value": "jdeleon@gmail.com"
+                        "value": "walvarado@gmail.com"
                     },
                     {
                         "name": "job",
@@ -89,21 +96,21 @@
                     },
                     {
                         "name": "income",
-                        "value": "3000.00"
+                        "value": "900.00"
                     }
                 ]
             }
         },
         {
-            "_id": "fe152f7c-698a-493c-8fb1-825225378420",
-            "colId": "d0d308a5-859e-4af9-af32-58316e58e6b6",
-            "containerId": "9a28eda1-f4a3-40e9-8f77-d489b59b499f",
+            "_id": "bb58a0e3-e7a3-4db9-8ff6-19130b225b71",
+            "colId": "d2c9e1bb-f320-4e14-b841-da03e5bc3b04",
+            "containerId": "fe787a4c-dcdd-46ec-b60e-aea4aaac1000",
             "name": "Login admin",
             "url": "/admin/login",
             "method": "POST",
             "sortNum": 20000,
-            "created": "2024-06-10T20:28:18.054Z",
-            "modified": "2024-06-10T20:28:18.054Z",
+            "created": "2024-06-11T03:02:23.089Z",
+            "modified": "2024-06-11T03:02:23.089Z",
             "headers": [],
             "body": {
                 "type": "formencoded",
@@ -121,15 +128,15 @@
             }
         },
         {
-            "_id": "584b95f4-9d18-4967-9e13-8fd6df1136b4",
-            "colId": "d0d308a5-859e-4af9-af32-58316e58e6b6",
-            "containerId": "a8d9109a-2883-442a-b62a-b54a8fdef6e9",
+            "_id": "6a6258a0-5b54-4e9a-bba7-277d175c2a8b",
+            "colId": "d2c9e1bb-f320-4e14-b841-da03e5bc3b04",
+            "containerId": "60357d71-7818-4b38-8026-835fd9da9115",
             "name": "Add",
             "url": "/type/add",
             "method": "POST",
             "sortNum": 40000,
-            "created": "2024-06-10T20:28:18.055Z",
-            "modified": "2024-06-10T20:28:18.055Z",
+            "created": "2024-06-11T03:02:23.090Z",
+            "modified": "2024-06-11T03:02:23.090Z",
             "headers": [],
             "body": {
                 "type": "formencoded",
@@ -147,15 +154,15 @@
             }
         },
         {
-            "_id": "5f968692-1a32-4234-a3fd-f774c9bdfb63",
-            "colId": "d0d308a5-859e-4af9-af32-58316e58e6b6",
-            "containerId": "a2479bc8-6197-44db-8cea-dfe5cf820aaf",
+            "_id": "d8a708e2-696d-456b-84da-0bd52e543e2c",
+            "colId": "d2c9e1bb-f320-4e14-b841-da03e5bc3b04",
+            "containerId": "0762c7df-7a81-4c87-9404-39fa42951c2c",
             "name": "Create account",
             "url": "/account/create",
             "method": "POST",
             "sortNum": 50000,
-            "created": "2024-06-10T20:28:18.056Z",
-            "modified": "2024-06-10T20:28:18.056Z",
+            "created": "2024-06-11T03:02:23.091Z",
+            "modified": "2024-06-11T03:02:23.091Z",
             "headers": [],
             "body": {
                 "type": "formencoded",
@@ -173,32 +180,32 @@
             }
         },
         {
-            "_id": "a241ab7b-0fb1-48a4-aff7-3c99730cb83e",
-            "colId": "d0d308a5-859e-4af9-af32-58316e58e6b6",
-            "containerId": "9a28eda1-f4a3-40e9-8f77-d489b59b499f",
+            "_id": "c26a8df9-fc1c-49c9-8a7e-bba379e3d3a6",
+            "colId": "d2c9e1bb-f320-4e14-b841-da03e5bc3b04",
+            "containerId": "fe787a4c-dcdd-46ec-b60e-aea4aaac1000",
             "name": "List users",
             "url": "/user/listUsers",
             "method": "GET",
             "sortNum": 80000,
-            "created": "2024-06-10T20:28:18.058Z",
-            "modified": "2024-06-10T20:28:18.058Z",
+            "created": "2024-06-11T03:02:23.093Z",
+            "modified": "2024-06-15T23:31:33.724Z",
             "headers": [
                 {
                     "name": "token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjYyN2E2ODViN2FmMGY4YjI1MmVmNjAiLCJuYW1lIjoiQURNSU5CIiwic3VybmFtZSI6IkFETUlOQiIsIkRQSSI6IjEyMzQ1Njc4OTEyMzQiLCJhZGRyZXNzIjoieHh4eHh4eCIsInBob25lIjoieHh4eHh4eHgiLCJlbWFpbCI6Inh4eHh4eHh4Iiwiam9iIjoieHh4eHh4eHgiLCJpbmNvbWUiOiJ4eHh4eHh4eCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxNzk4NDA1OSwiZXhwIjoxNzE3OTk0ODU5fQ.pbaM2yruCaqMjIp86-XN3DcSzJ6iQHlIKjZ1C3mhu3s"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjYyN2E2ODViN2FmMGY4YjI1MmVmNjAiLCJuYW1lIjoiQURNSU5CIiwic3VybmFtZSI6IkFETUlOQiIsIkRQSSI6IjEyMzQ1Njc4OTEyMzQiLCJhZGRyZXNzIjoieHh4eHh4eCIsInBob25lIjoieHh4eHh4eHgiLCJlbWFpbCI6Inh4eHh4eHh4Iiwiam9iIjoieHh4eHh4eHgiLCJpbmNvbWUiOiJ4eHh4eHh4eCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxODQ5NDI4NiwiZXhwIjoxNzE4NTA1MDg2fQ.DVqyVQveGj_T4qHF__J3iS23bGN3xauI4I9pTEREW0o"
                 }
             ]
         },
         {
-            "_id": "8195c50a-4603-46e0-9be2-7faf50fcc9df",
-            "colId": "d0d308a5-859e-4af9-af32-58316e58e6b6",
-            "containerId": "9a28eda1-f4a3-40e9-8f77-d489b59b499f",
+            "_id": "617516ca-07f4-4c68-bf72-af182714c3e6",
+            "colId": "d2c9e1bb-f320-4e14-b841-da03e5bc3b04",
+            "containerId": "fe787a4c-dcdd-46ec-b60e-aea4aaac1000",
             "name": "Update user",
             "url": "/user/updateUser/66665b4546d0b67c41cfd25a",
             "method": "PUT",
             "sortNum": 90000,
-            "created": "2024-06-10T20:28:18.059Z",
-            "modified": "2024-06-10T20:28:18.059Z",
+            "created": "2024-06-11T03:02:23.094Z",
+            "modified": "2024-06-11T03:02:23.094Z",
             "headers": [
                 {
                     "name": "token",
@@ -221,21 +228,69 @@
             }
         },
         {
-            "_id": "5ac3b823-2ff0-4a10-a4b2-cccef1c99859",
-            "colId": "d0d308a5-859e-4af9-af32-58316e58e6b6",
-            "containerId": "9a28eda1-f4a3-40e9-8f77-d489b59b499f",
+            "_id": "dc04de92-28b5-47b1-9bf4-cca7c1b14396",
+            "colId": "d2c9e1bb-f320-4e14-b841-da03e5bc3b04",
+            "containerId": "fe787a4c-dcdd-46ec-b60e-aea4aaac1000",
             "name": "Delete user",
             "url": "/user/deleteUser/66669d986711e69b8d1a4d28",
             "method": "DELETE",
             "sortNum": 100000,
-            "created": "2024-06-10T20:28:18.060Z",
-            "modified": "2024-06-10T20:28:18.060Z",
+            "created": "2024-06-11T03:02:23.095Z",
+            "modified": "2024-06-11T03:02:23.095Z",
             "headers": [
                 {
                     "name": "token",
                     "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjYyN2E2ODViN2FmMGY4YjI1MmVmNjAiLCJuYW1lIjoiQURNSU5CIiwic3VybmFtZSI6IkFETUlOQiIsIkRQSSI6IjEyMzQ1Njc4OTEyMzQiLCJhZGRyZXNzIjoieHh4eHh4eCIsInBob25lIjoieHh4eHh4eHgiLCJlbWFpbCI6Inh4eHh4eHh4Iiwiam9iIjoieHh4eHh4eHgiLCJpbmNvbWUiOiJ4eHh4eHh4eCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxODAwMTAzOSwiZXhwIjoxNzE4MDExODM5fQ.07zCcKu0BgSc1qr7cC7leRSJnCB-1jnZeiBEUKWwvYc"
                 }
             ]
+        },
+        {
+            "_id": "5e2f0f23-88e3-4035-9dfa-4f4a34b4f8a6",
+            "colId": "d2c9e1bb-f320-4e14-b841-da03e5bc3b04",
+            "containerId": "b44fc0e6-e75d-4d57-b362-8dde6748b255",
+            "name": "list transtactions",
+            "url": "/transactions/listTransactions",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-06-15T05:38:54.524Z",
+            "modified": "2024-06-15T05:39:28.258Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjYyN2E2ODViN2FmMGY4YjI1MmVmNjAiLCJuYW1lIjoiQURNSU5CIiwic3VybmFtZSI6IkFETUlOQiIsIkRQSSI6IjEyMzQ1Njc4OTEyMzQiLCJhZGRyZXNzIjoieHh4eHh4eCIsInBob25lIjoieHh4eHh4eHgiLCJlbWFpbCI6Inh4eHh4eHh4Iiwiam9iIjoieHh4eHh4eHgiLCJpbmNvbWUiOiJ4eHh4eHh4eCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxODQyOTkxOSwiZXhwIjoxNzE4NDQwNzE5fQ.2beZH92oQFAIleoDd7oNjn_8FI1438ZqY2KgmFgOyJ0"
+                }
+            ]
+        },
+        {
+            "_id": "41f44c2b-f401-413a-956c-76d7208b7af4",
+            "colId": "d2c9e1bb-f320-4e14-b841-da03e5bc3b04",
+            "containerId": "64e2f010-8dbb-4e3d-b18f-a24dd588130e",
+            "name": "create card",
+            "url": "/card/addCard",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2024-06-16T03:14:42.478Z",
+            "modified": "2024-06-21T16:09:12.215Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjYyN2E2ODViN2FmMGY4YjI1MmVmNjAiLCJuYW1lIjoiQURNSU5CIiwic3VybmFtZSI6IkFETUlOQiIsIkRQSSI6IjEyMzQ1Njc4OTEyMzQiLCJhZGRyZXNzIjoieHh4eHh4eCIsInBob25lIjoieHh4eHh4eHgiLCJlbWFpbCI6Inh4eHh4eHh4Iiwiam9iIjoieHh4eHh4eHgiLCJpbmNvbWUiOiJ4eHh4eHh4eCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxODk4NTg5OSwiZXhwIjoxNzE4OTk2Njk5fQ.Af1q9IbhXYmSJy6I3SDpQRPiIffVs4mNxHHXrM1QLv8"
+                }
+            ],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "cardNumber",
+                        "value": "665c15900dbb4c10f5f9df3a"
+                    },
+                    {
+                        "name": "userId",
+                        "value": ""
+                    }
+                ]
+            }
         }
     ],
     "settings": {
@@ -243,5 +298,5 @@
             "baseUrl": "localhost:2656"
         }
     },
-    "ref": "v74C1Ltfy1fXJTcNkZTN1DSIQN73wIZCeO1sKmB5bpxZ13ILcYbAa8RjYs19Uy9pPmv2sW8hsaFkLKWCGR7LZA"
+    "ref": "qO9amltu4mNreBHiDC-4XRV-BZwdAelg2dMGzVpJlI00vloz3zwgHkwIWxslDgLgkOzPrcLb8uXLtQPHhEEhlg"
 }

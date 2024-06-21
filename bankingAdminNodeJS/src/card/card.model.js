@@ -1,9 +1,10 @@
-import { Schema, model } from 'mongoose'
+  import { Schema, model } from 'mongoose'
 import Decimal from 'decimal.js'
 
 const cardSchema = new Schema({
     cardNumber:{
-        type: Number,
+        type: Schema.ObjectId,
+        ref: 'Account',
         required: true
     },
     userId:{

@@ -60,6 +60,7 @@ export const login = async(req, res)=>{
 export const listUser = async(req, res)=>{
     try {
         const listData = await User.find()
+        if(listData.length == 0) return res.status(404).send({message: 'Users not found.'})
         return res.send({message: 'The list users: ', listData})
     } catch (err) {
         console.error(err);

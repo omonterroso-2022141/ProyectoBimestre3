@@ -42,3 +42,13 @@ export const makeTransaction = async(req, res)=>{
         return res.status(500).send({message: 'Error when completing the transaction'})
     }
 }
+
+export const listTransactions = async(req, res)=>{
+    try {
+        const transactions = await Transaction.find()
+        return res.send({message: 'Transactions found', transactions})
+    } catch (err) {
+        console.error(err);
+        return res.status(500).send({message: 'Error to list transactions.'})
+    }
+}
