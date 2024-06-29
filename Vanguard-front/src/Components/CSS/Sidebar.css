@@ -26,3 +26,23 @@
 .sidebar-content a img{
     width: 3vh;
 }
+
+.sidebar-content label{
+    color: white;
+    text-decoration: none;
+    padding-left: 2vh;
+    margin-left: 10px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.sidebar-content label:hover{
+    background-color: #76ABAE;
+}
+
+.sidebar-content input[type="radio"]{
+    display: none;
+}
