@@ -2,7 +2,7 @@
     "clientName": "Thunder Client",
     "collectionName": "BankingSystem",
     "collectionId": "94e88087-2cf2-4175-b6c5-465ce647bd0b",
-    "dateExported": "2024-06-21T17:11:58.133Z",
+    "dateExported": "2024-07-04T17:01:02.282Z",
     "version": "1.2",
     "folders": [
         {
@@ -30,7 +30,7 @@
             "method": "POST",
             "sortNum": 20000,
             "created": "2024-06-11T03:02:31.298Z",
-            "modified": "2024-06-15T06:14:53.835Z",
+            "modified": "2024-07-04T16:45:15.201Z",
             "headers": [],
             "body": {
                 "type": "formencoded",
@@ -38,11 +38,11 @@
                 "form": [
                     {
                         "name": "username",
-                        "value": "wlopez"
+                        "value": "myac"
                     },
                     {
                         "name": "password",
-                        "value": "XeaRsqDLLsfT"
+                        "value": "nLkZXug4wILY"
                     }
                 ]
             }
@@ -56,11 +56,11 @@
             "method": "POST",
             "sortNum": 60000,
             "created": "2024-06-11T03:14:27.221Z",
-            "modified": "2024-06-15T22:54:13.501Z",
+            "modified": "2024-07-04T16:57:35.353Z",
             "headers": [
                 {
                     "name": "token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjY2NWI0NTQ2ZDBiNjdjNDFjZmQyNWEiLCJuYW1lIjoiV2lsbGlhbSIsInN1cm5hbWUiOiJMb3BleiIsInVzZXJuYW1lIjoid2xvcGV6IiwiRFBJIjoiNTQ3MjA4OTM0MDEwOCIsImFkZHJlc3MiOiIxYXYgMy01NCBab25hIDEgQ2l1ZGFkIGRlIEd1YXRlbWFsYSIsInBob25lIjoiMTIzNDU2NzgiLCJlbWFpbCI6IndhbHZhcmFkb0BnbWFpbC5jb20iLCJqb2IiOiJDb25zdHJ1Y3RvciIsImluY29tZSI6IjkwMC4wMCIsImlhdCI6MTcxODQ5MjA0MSwiZXhwIjoxNzE4NTAyODQxfQ.O83HmdycCCq6EVUT-iKTN693gyrYN_QIcDFzzBE7hdc"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjgzNjIwNGU5M2Y0YmI2MDA3ODdmOTEiLCJuYW1lIjoiTWlndWVsIiwic3VybmFtZSI6IllhYyIsInVzZXJuYW1lIjoibXlhYyIsIkRQSSI6IjMwMzI1MzcwMzAxMDgiLCJhZGRyZXNzIjoiMWF2IDMtNTQgWm9uYSAxIENpdWRhZCBkZSBHdWF0ZW1hbGEiLCJwaG9uZSI6IjEyMzQ1Njc4IiwiZW1haWwiOiJteWFjQGdtYWlsLmNvbSIsImpvYiI6IlByb2dyYW1hZG9yIiwiaW5jb21lIjoiMTkwMC4wMCIsImlhdCI6MTcyMDExMTUxNSwiZXhwIjoxNzIwMTIyMzE1fQ.g9-80FkUpuLne0gX7ugieDUtCm9k4iYD_RT8zGKQwxI"
                 }
             ],
             "body": {
@@ -69,11 +69,11 @@
                 "form": [
                     {
                         "name": "toAccount",
-                        "value": "665c15900dbb4c10f5f9df3a"
+                        "value": "869547208934"
                     },
                     {
-                        "name": "forAccount",
-                        "value": "665bafd028336b7e5ccc2ff5"
+                        "name": "fromAccount",
+                        "value": "197303253703"
                     },
                     {
                         "name": "amount",
@@ -105,5 +105,5 @@
             "baseUrl": "localhost:2880"
         }
     },
-    "ref": "1rGlkRtsA-5vDcwaWFhuXAoNEfgmYfcsvxPnx3-qAu6rUdiRMlFGs7ldlTd-a_X0WOF0P5TFiKivcoXoxctn_A"
+    "ref": "1rGlkRtsA-5vDcwaWFhuXAl2nKfGDcG7GSvjcMwDK8T52U7Q1vWJ7Xrp_HtN8W-281bOurJypQS8rTP8tMfebA"
 }

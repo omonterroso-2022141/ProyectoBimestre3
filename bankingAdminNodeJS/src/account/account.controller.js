@@ -31,8 +31,8 @@ export const createAccount = async(req, res)=>{
         let balance = new Decimal(dataAccount.balance || 0).toFixed(2)
         dataAccount.balance = new mongoose.Types.Decimal128(balance)
         dataAccount.balance = balance
-
-        
+        //Se verifica que haya minimo Q100.00 para aperturar la cuenta   
+        if(dataAccount.balance < 100.00) return res.status(401).send({message: 'The balance isn`t enough'})
 
         let account = new Account(dataAccount)
         await account.save()

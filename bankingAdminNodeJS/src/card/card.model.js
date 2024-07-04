@@ -2,7 +2,7 @@
 import Decimal from 'decimal.js'
 
 const cardSchema = new Schema({
-    cardNumber:{
+    account:{
         type: Schema.ObjectId,
         ref: 'Account',
         required: true
