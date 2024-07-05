@@ -2,7 +2,7 @@
     "clientName": "Thunder Client",
     "collectionName": "BankingSystemAdmin",
     "collectionId": "d2c9e1bb-f320-4e14-b841-da03e5bc3b04",
-    "dateExported": "2024-07-04T17:00:50.786Z",
+    "dateExported": "2024-07-05T17:22:38.856Z",
     "version": "1.2",
     "folders": [
         {
@@ -279,7 +279,7 @@
             "method": "POST",
             "sortNum": 120000,
             "created": "2024-06-16T03:14:42.478Z",
-            "modified": "2024-07-01T22:57:33.965Z",
+            "modified": "2024-07-05T17:14:59.234Z",
             "headers": [
                 {
                     "name": "token",
@@ -292,7 +292,7 @@
                 "form": [
                     {
                         "name": "account",
-                        "value": "668331f782490c5b4bfd8d88"
+                        "value": "197303253703"
                     }
                 ]
             }
@@ -303,5 +303,5 @@
             "baseUrl": "localhost:2656"
         }
     },
-    "ref": "qO9amltu4mNreBHiDC-4XWFMmJiDB4euTpCzINgpMTFnd4mq_g7gpgfKOQwQdngsh-72CzzcSOejUsZLaOrhZg"
+    "ref": "qO9amltu4mNreBHiDC-4XYjzn91zj1T62T0ueZ1iuFr1w6ylpw7L2pUgdzC5TI3mmmfzB4Hrp6JbsEa7eK1jBQ"
 }

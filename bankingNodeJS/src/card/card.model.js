@@ -3,7 +3,8 @@ import Decimal from 'decimal.js'
 
 const cardSchema = new Schema({
     account:{
-        type: String,
+        type: Schema.ObjectId,
+        ref: 'Account',
         required: true
     },
     userId:{

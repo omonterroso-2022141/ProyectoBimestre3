@@ -2,7 +2,7 @@
     "clientName": "Thunder Client",
     "collectionName": "BankingSystem",
     "collectionId": "94e88087-2cf2-4175-b6c5-465ce647bd0b",
-    "dateExported": "2024-07-04T17:01:02.282Z",
+    "dateExported": "2024-07-05T17:22:29.473Z",
     "version": "1.2",
     "folders": [
         {
@@ -56,11 +56,11 @@
             "method": "POST",
             "sortNum": 60000,
             "created": "2024-06-11T03:14:27.221Z",
-            "modified": "2024-07-04T16:57:35.353Z",
+            "modified": "2024-07-05T16:50:02.880Z",
             "headers": [
                 {
                     "name": "token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjgzNjIwNGU5M2Y0YmI2MDA3ODdmOTEiLCJuYW1lIjoiTWlndWVsIiwic3VybmFtZSI6IllhYyIsInVzZXJuYW1lIjoibXlhYyIsIkRQSSI6IjMwMzI1MzcwMzAxMDgiLCJhZGRyZXNzIjoiMWF2IDMtNTQgWm9uYSAxIENpdWRhZCBkZSBHdWF0ZW1hbGEiLCJwaG9uZSI6IjEyMzQ1Njc4IiwiZW1haWwiOiJteWFjQGdtYWlsLmNvbSIsImpvYiI6IlByb2dyYW1hZG9yIiwiaW5jb21lIjoiMTkwMC4wMCIsImlhdCI6MTcyMDExMTUxNSwiZXhwIjoxNzIwMTIyMzE1fQ.g9-80FkUpuLne0gX7ugieDUtCm9k4iYD_RT8zGKQwxI"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjgzNjIwNGU5M2Y0YmI2MDA3ODdmOTEiLCJuYW1lIjoiTWlndWVsIiwic3VybmFtZSI6IllhYyIsInVzZXJuYW1lIjoibXlhYyIsIkRQSSI6IjMwMzI1MzcwMzAxMDgiLCJhZGRyZXNzIjoiMWF2IDMtNTQgWm9uYSAxIENpdWRhZCBkZSBHdWF0ZW1hbGEiLCJwaG9uZSI6IjEyMzQ1Njc4IiwiZW1haWwiOiJteWFjQGdtYWlsLmNvbSIsImpvYiI6IlByb2dyYW1hZG9yIiwiaW5jb21lIjoiMTkwMC4wMCIsImlhdCI6MTcyMDE5NTM2NiwiZXhwIjoxNzIwMjA2MTY2fQ.GkmSnvvNHBoS753Unn3cGVs3Y9sCWVC_8cjiYcyDE64"
                 }
             ],
             "body": {
@@ -69,7 +69,7 @@
                 "form": [
                     {
                         "name": "toAccount",
-                        "value": "869547208934"
+                        "value": "622547208934"
                     },
                     {
                         "name": "fromAccount",
@@ -105,5 +105,5 @@
             "baseUrl": "localhost:2880"
         }
     },
-    "ref": "1rGlkRtsA-5vDcwaWFhuXAl2nKfGDcG7GSvjcMwDK8T52U7Q1vWJ7Xrp_HtN8W-281bOurJypQS8rTP8tMfebA"
+    "ref": "1rGlkRtsA-5vDcwaWFhuXDeAdto9A8VLYLYUFMmqQkBt8h8YUNRu997Nu7-bXg0QQF8tzGplJMcuzpU5bfqRlA"
 }

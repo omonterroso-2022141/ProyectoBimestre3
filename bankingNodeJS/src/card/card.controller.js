@@ -23,9 +23,10 @@ function generateSecureCVV(length = 3) {
 export const createCard = async (req, res) => {
     try {
         let data = req.body
-        let dataAccount = await Account.findOne({account: data.account})
+        let dataAccount = await Account.findById( data.account )
         if (!dataAccount) return res.status(404).send({ message: 'Account not found' })
         console.log('Account found: '+dataAccount);
+        data.account = dataAccount.account
         // Buscamos los datos del usuario ligado a la cuenta para validar la propiedad de la cuenta.
         let dataUser = await User.findOne(dataAccount.userId)
         if(!dataUser) return res.status(404).send({message: 'User not found'})
@@ -53,3 +54,4 @@ export const createCard = async (req, res) => {
         return res.status(500).send({ message: 'Error creating card' })
     }
 }
+
