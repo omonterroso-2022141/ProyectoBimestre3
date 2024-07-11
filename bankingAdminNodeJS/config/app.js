@@ -11,6 +11,7 @@ import accountRoutes from '../src/account/account.routes.js'
 import transactionRoutes from '../src/transactions/transactions.routes.js'
 import adminRoutes from '../src/admin/admin.routes.js'  
 import cardRoutes from '../src/card/card.routes.js'
+import loanRoutes from '../src/loanType/loanType.routes.js'
 
 const app = express()
 config()
@@ -28,6 +29,7 @@ app.use('/account', accountRoutes)
 app.use('/transactions', transactionRoutes)
 app.use('/admin', adminRoutes)
 app.use('/card', cardRoutes)
+app.use('/loan', loanRoutes)
 
 export const initServer =()=>{
     app.listen(port)

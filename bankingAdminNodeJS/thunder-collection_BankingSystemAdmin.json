@@ -1,57 +1,64 @@
 {
     "clientName": "Thunder Client",
     "collectionName": "BankingSystemAdmin",
-    "collectionId": "d2c9e1bb-f320-4e14-b841-da03e5bc3b04",
-    "dateExported": "2024-07-05T17:22:38.856Z",
+    "collectionId": "8aceac0d-a40c-4f5a-a02f-bc3d996ab65a",
+    "dateExported": "2024-07-11T19:57:27.878Z",
     "version": "1.2",
     "folders": [
         {
-            "_id": "fe787a4c-dcdd-46ec-b60e-aea4aaac1000",
+            "_id": "c93270e2-1c16-4b8d-8abe-da9dc3479d53",
             "name": "User",
             "containerId": "",
-            "created": "2024-06-11T03:02:23.088Z",
+            "created": "2024-07-11T19:44:03.364Z",
             "sortNum": 10000
         },
         {
-            "_id": "0762c7df-7a81-4c87-9404-39fa42951c2c",
+            "_id": "6da04264-f21f-40ce-a5d9-f86c9eb3a411",
             "name": "Account",
             "containerId": "",
-            "created": "2024-06-11T03:02:23.089Z",
+            "created": "2024-07-11T19:44:03.365Z",
             "sortNum": 20000
         },
         {
-            "_id": "60357d71-7818-4b38-8026-835fd9da9115",
+            "_id": "834b91b6-ce9b-4cfb-8749-bc6098f8e2cc",
             "name": "Type Account",
             "containerId": "",
-            "created": "2024-06-11T03:02:23.090Z",
+            "created": "2024-07-11T19:44:03.366Z",
             "sortNum": 30000
         },
         {
-            "_id": "b44fc0e6-e75d-4d57-b362-8dde6748b255",
+            "_id": "9e4e5590-aeeb-4097-baed-ed4ae23ef10f",
             "name": "Movements",
             "containerId": "",
-            "created": "2024-06-15T04:08:28.461Z",
+            "created": "2024-07-11T19:44:03.367Z",
             "sortNum": 40000
         },
         {
-            "_id": "64e2f010-8dbb-4e3d-b18f-a24dd588130e",
+            "_id": "04c72f63-aa79-4d71-afb2-f1ff95f30660",
             "name": "Card",
             "containerId": "",
-            "created": "2024-06-15T04:08:51.391Z",
+            "created": "2024-07-11T19:44:03.368Z",
             "sortNum": 40000
+        },
+        {
+            "_id": "89716d1c-b1af-4d57-8630-40da8fb2e8db",
+            "name": "Type Loans",
+            "containerId": "",
+            "created": "2024-07-11T19:44:59.543Z",
+            "sortNum": 50000
         }
     ],
     "requests": [
         {
-            "_id": "53fcc727-8754-486d-a52d-cec7b4db77a6",
-            "colId": "d2c9e1bb-f320-4e14-b841-da03e5bc3b04",
-            "containerId": "fe787a4c-dcdd-46ec-b60e-aea4aaac1000",
+            "_id": "66a60205-08da-4824-b380-84c31312d298",
+            "colId": "8aceac0d-a40c-4f5a-a02f-bc3d996ab65a",
+            "containerId": "c93270e2-1c16-4b8d-8abe-da9dc3479d53",
             "name": "Create user",
             "url": "/user/register",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-06-11T03:02:23.088Z",
-            "modified": "2024-07-02T02:12:20.851Z",
+            "created": "2024-07-11T19:44:03.364Z",
+            "modified": "2024-07-11T19:44:03.364Z",
             "headers": [
                 {
                     "name": "token",
@@ -102,15 +109,15 @@
             }
         },
         {
-            "_id": "6a6258a0-5b54-4e9a-bba7-277d175c2a8b",
-            "colId": "d2c9e1bb-f320-4e14-b841-da03e5bc3b04",
-            "containerId": "60357d71-7818-4b38-8026-835fd9da9115",
+            "_id": "0ff00d7c-16af-44e4-be92-5649e07e0f1f",
+            "colId": "8aceac0d-a40c-4f5a-a02f-bc3d996ab65a",
+            "containerId": "834b91b6-ce9b-4cfb-8749-bc6098f8e2cc",
             "name": "Add",
             "url": "/type/add",
             "method": "POST",
             "sortNum": 40000,
-            "created": "2024-06-11T03:02:23.090Z",
-            "modified": "2024-06-11T03:02:23.090Z",
+            "created": "2024-07-11T19:44:03.366Z",
+            "modified": "2024-07-11T19:44:03.366Z",
             "headers": [],
             "body": {
                 "type": "formencoded",
@@ -128,15 +135,15 @@
             }
         },
         {
-            "_id": "d8a708e2-696d-456b-84da-0bd52e543e2c",
-            "colId": "d2c9e1bb-f320-4e14-b841-da03e5bc3b04",
-            "containerId": "0762c7df-7a81-4c87-9404-39fa42951c2c",
+            "_id": "c24a1d34-4583-4273-b686-7e97c771396d",
+            "colId": "8aceac0d-a40c-4f5a-a02f-bc3d996ab65a",
+            "containerId": "6da04264-f21f-40ce-a5d9-f86c9eb3a411",
             "name": "Create account",
             "url": "/account/create",
             "method": "POST",
             "sortNum": 50000,
-            "created": "2024-06-11T03:02:23.091Z",
-            "modified": "2024-07-04T16:46:19.696Z",
+            "created": "2024-07-11T19:44:03.367Z",
+            "modified": "2024-07-11T19:44:03.367Z",
             "headers": [
                 {
                     "name": "token",
@@ -163,15 +170,15 @@
             }
         },
         {
-            "_id": "c26a8df9-fc1c-49c9-8a7e-bba379e3d3a6",
-            "colId": "d2c9e1bb-f320-4e14-b841-da03e5bc3b04",
-            "containerId": "fe787a4c-dcdd-46ec-b60e-aea4aaac1000",
+            "_id": "c953cbc5-29cf-4fba-a3e9-ecc1a9de2e4d",
+            "colId": "8aceac0d-a40c-4f5a-a02f-bc3d996ab65a",
+            "containerId": "c93270e2-1c16-4b8d-8abe-da9dc3479d53",
             "name": "List users",
             "url": "/user/listUsers",
             "method": "GET",
             "sortNum": 80000,
-            "created": "2024-06-11T03:02:23.093Z",
-            "modified": "2024-07-01T19:34:17.386Z",
+            "created": "2024-07-11T19:44:03.368Z",
+            "modified": "2024-07-11T19:44:03.368Z",
             "headers": [
                 {
                     "name": "token",
@@ -180,15 +187,15 @@
             ]
         },
         {
-            "_id": "bb58a0e3-e7a3-4db9-8ff6-19130b225b71",
-            "colId": "d2c9e1bb-f320-4e14-b841-da03e5bc3b04",
-            "containerId": "fe787a4c-dcdd-46ec-b60e-aea4aaac1000",
+            "_id": "70dbbc6e-85ef-45cf-bd1f-0679707e5155",
+            "colId": "8aceac0d-a40c-4f5a-a02f-bc3d996ab65a",
+            "containerId": "c93270e2-1c16-4b8d-8abe-da9dc3479d53",
             "name": "Login admin",
             "url": "/admin/login",
             "method": "POST",
             "sortNum": 85000,
-            "created": "2024-06-11T03:02:23.089Z",
-            "modified": "2024-06-11T03:02:23.089Z",
+            "created": "2024-07-11T19:44:03.365Z",
+            "modified": "2024-07-11T19:44:03.365Z",
             "headers": [],
             "body": {
                 "type": "formencoded",
@@ -206,15 +213,15 @@
             }
         },
         {
-            "_id": "617516ca-07f4-4c68-bf72-af182714c3e6",
-            "colId": "d2c9e1bb-f320-4e14-b841-da03e5bc3b04",
-            "containerId": "fe787a4c-dcdd-46ec-b60e-aea4aaac1000",
+            "_id": "7646f4d1-fb6d-4cec-8cfb-491e2a701e67",
+            "colId": "8aceac0d-a40c-4f5a-a02f-bc3d996ab65a",
+            "containerId": "c93270e2-1c16-4b8d-8abe-da9dc3479d53",
             "name": "Update user",
             "url": "/user/updateUser/66665b4546d0b67c41cfd25a",
             "method": "PUT",
             "sortNum": 90000,
-            "created": "2024-06-11T03:02:23.094Z",
-            "modified": "2024-06-11T03:02:23.094Z",
+            "created": "2024-07-11T19:44:03.369Z",
+            "modified": "2024-07-11T19:44:03.369Z",
             "headers": [
                 {
                     "name": "token",
@@ -237,15 +244,15 @@
             }
         },
         {
-            "_id": "dc04de92-28b5-47b1-9bf4-cca7c1b14396",
-            "colId": "d2c9e1bb-f320-4e14-b841-da03e5bc3b04",
-            "containerId": "fe787a4c-dcdd-46ec-b60e-aea4aaac1000",
+            "_id": "e4dbfe57-20e5-43ab-8e28-fa6901a361d8",
+            "colId": "8aceac0d-a40c-4f5a-a02f-bc3d996ab65a",
+            "containerId": "c93270e2-1c16-4b8d-8abe-da9dc3479d53",
             "name": "Delete user",
             "url": "/user/deleteUser/66669d986711e69b8d1a4d28",
             "method": "DELETE",
             "sortNum": 100000,
-            "created": "2024-06-11T03:02:23.095Z",
-            "modified": "2024-06-11T03:02:23.095Z",
+            "created": "2024-07-11T19:44:03.370Z",
+            "modified": "2024-07-11T19:44:03.370Z",
             "headers": [
                 {
                     "name": "token",
@@ -254,15 +261,15 @@
             ]
         },
         {
-            "_id": "5e2f0f23-88e3-4035-9dfa-4f4a34b4f8a6",
-            "colId": "d2c9e1bb-f320-4e14-b841-da03e5bc3b04",
-            "containerId": "b44fc0e6-e75d-4d57-b362-8dde6748b255",
+            "_id": "983c73cf-5b93-45a3-bece-77800758069a",
+            "colId": "8aceac0d-a40c-4f5a-a02f-bc3d996ab65a",
+            "containerId": "9e4e5590-aeeb-4097-baed-ed4ae23ef10f",
             "name": "list transtactions",
             "url": "/transactions/listTransactions",
             "method": "GET",
             "sortNum": 110000,
-            "created": "2024-06-15T05:38:54.524Z",
-            "modified": "2024-06-15T05:39:28.258Z",
+            "created": "2024-07-11T19:44:03.371Z",
+            "modified": "2024-07-11T19:44:03.371Z",
             "headers": [
                 {
                     "name": "token",
@@ -271,15 +278,15 @@
             ]
         },
         {
-            "_id": "41f44c2b-f401-413a-956c-76d7208b7af4",
-            "colId": "d2c9e1bb-f320-4e14-b841-da03e5bc3b04",
-            "containerId": "64e2f010-8dbb-4e3d-b18f-a24dd588130e",
+            "_id": "a0fdd3d2-a3ae-4922-be3e-2fec6dc62d9d",
+            "colId": "8aceac0d-a40c-4f5a-a02f-bc3d996ab65a",
+            "containerId": "04c72f63-aa79-4d71-afb2-f1ff95f30660",
             "name": "create card",
             "url": "/card/addCard",
             "method": "POST",
             "sortNum": 120000,
-            "created": "2024-06-16T03:14:42.478Z",
-            "modified": "2024-07-05T17:14:59.234Z",
+            "created": "2024-07-11T19:44:03.372Z",
+            "modified": "2024-07-11T19:44:03.372Z",
             "headers": [
                 {
                     "name": "token",
@@ -296,6 +303,41 @@
                     }
                 ]
             }
+        },
+        {
+            "_id": "6edfc38a-51c7-4dd9-85a3-eee9da735bc8",
+            "colId": "8aceac0d-a40c-4f5a-a02f-bc3d996ab65a",
+            "containerId": "89716d1c-b1af-4d57-8630-40da8fb2e8db",
+            "name": "add loan type",
+            "url": "/loan/addTypeLoan",
+            "method": "POST",
+            "sortNum": 140000,
+            "created": "2024-07-11T19:54:11.364Z",
+            "modified": "2024-07-11T19:55:50.488Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjkwMmMzZDYzYmI0NWNlNmZhZTg0NTgiLCJuYW1lIjoiQURNSU5CIiwic3VybmFtZSI6IkFETUlOQiIsIkRQSSI6IjEyMzQ1Njc4OTEyMzQiLCJhZGRyZXNzIjoieHh4eHh4eCIsInBob25lIjoieHh4eHh4eHgiLCJlbWFpbCI6Inh4eHh4eHh4Iiwiam9iIjoieHh4eHh4eHgiLCJpbmNvbWUiOiJ4eHh4eHh4eCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcyMDcyNzA2MiwiZXhwIjoxNzIwNzM3ODYyfQ.F3pWccs3VaQe6y8G6Hh7JFoLJdD9Bdpw4I6OxQh03rQ"
+                }
+            ],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Prestamo Hipotecario"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Este prestamos es sobre vivienda"
+                    },
+                    {
+                        "name": "interestRate",
+                        "value": "12"
+                    }
+                ]
+            }
         }
     ],
     "settings": {
@@ -303,5 +345,5 @@
             "baseUrl": "localhost:2656"
         }
     },
-    "ref": "qO9amltu4mNreBHiDC-4XYjzn91zj1T62T0ueZ1iuFr1w6ylpw7L2pUgdzC5TI3mmmfzB4Hrp6JbsEa7eK1jBQ"
+    "ref": "SjodH0zrpqj2T7ZnUyjRbLlMJ8E5bH4CMhrQxPNN55R1e94wHPUuSC88QYLppCJQ-Un-WbmuoP4RlQGnrkPV9g"
 }

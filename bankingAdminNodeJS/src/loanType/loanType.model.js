@@ -1,7 +1,7 @@
-import { model, Schema } from 'express'
+import { model, Schema } from 'mongoose'
 
 const loanTypeSchema = Schema({
-    name:{
+    title:{
         type: String,
         required: true
     },
@@ -9,6 +9,11 @@ const loanTypeSchema = Schema({
         type: String,
         required: true
     },
+    interestRate:{
+        // E; interes es anual.
+        type:Number,
+        required: true
+    }
     
 },{
     versionKey: false
