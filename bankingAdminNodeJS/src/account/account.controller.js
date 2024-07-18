@@ -42,3 +42,13 @@ export const createAccount = async(req, res)=>{
         return res.status(500).send({message: 'Error to create account.'})
     }
 }
+
+export const safe = async(req, res)=>{
+    try {
+        let data = req.body
+
+    } catch (err) {
+        console.error(err);
+        return res.status(500).send({message: 'Error to create safe'})
+    }
+}
