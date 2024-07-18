@@ -16,6 +16,17 @@ const loansSchema = new Schema({
     amount:{
         type: Schema.Types.Decimal128,
         required: true,
+    },
+    DPI_guarantor:{
+        type: Number,
+    },
+    name_guarantor:{
+        type: String
+    },
+    number_guarantor:{
+        type: String,
+        max: 8,
+        min: 8
     }
 },{
     varsionKey: false
