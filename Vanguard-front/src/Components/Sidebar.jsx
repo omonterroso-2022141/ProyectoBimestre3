@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import './CSS/Sidebar.css'
 import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export const Sidebar = () => {
 
     const [selectedOption, setSelectedOption] = useState('')
     const [transferOptions, setTransferOptions] = useState(false)
+    const [username, setUsername] = useState('')
+
 
     const handleOptionChange = (event) => {
         setSelectedOption(event.target.value)
@@ -15,7 +18,11 @@ export const Sidebar = () => {
             setTransferOptions(false)
         }
     }
+
     useEffect(() => {
+        const storedUsername = localStorage.getItem('username')
+        setUsername(storedUsername || '')
+
         const currentPage = window.location.pathname
         if (currentPage === '/loans') {
             setSelectedOption('loans')
@@ -25,11 +32,11 @@ export const Sidebar = () => {
         } else if (currentPage === '/othersaccounts') {
             setSelectedOption('othersAccounts')
             setTransferOptions(true)
-        }else if(currentPage === '/payments'){
+        } else if (currentPage === '/payments') {
             setSelectedOption('payments')
-        }else if(currentPage === '/history'){
+        } else if (currentPage === '/history') {
             setSelectedOption('history')
-        }else if(currentPage === '/accounts'){
+        } else if (currentPage === '/accounts') {
             setSelectedOption('accounts')
         }
     }, [])
@@ -54,15 +61,19 @@ export const Sidebar = () => {
         navigate('/payments')
     }
 
-    const navigateToHistory = () =>{
+    const navigateToHistory = () => {
         navigate('/history')
+    }
+
+    const navigateToUserInfo = () =>{
+        navigate('/user')
     }
 
     return (
         <div className='sidebar'>
             <div className='sidebar-content'>
                 <img style={{ width: '12vh', alignSelf: 'center' }} src="https://img.icons8.com/?size=100&id=7819&format=png&color=FFFFFF" />
-                <span style={{ textAlign: 'center' }}>Name</span>
+                <span onClick={navigateToUserInfo} style={{ textAlign: 'center' }}>Username: {username}</span>
                 <span style={{ marginLeft: '1vh' }}>Discover</span>
 
                 <label onClick={navigateToAccounts} style={{ backgroundColor: selectedOption === 'accounts' ? '#76ABAE' : '' }}>
@@ -80,7 +91,7 @@ export const Sidebar = () => {
                 <span style={{ marginLeft: '1vh' }}>Library</span>
 
                 <label onClick={navigateToHistory} style={{ backgroundColor: selectedOption === 'history' ? '#76ABAE' : '' }}>
-                    <input type="radio" value="history" checked={selectedOption === 'history'} onChange={handleOptionChange}/>
+                    <input type="radio" value="history" checked={selectedOption === 'history'} onChange={handleOptionChange} />
                     <img src="https://img.icons8.com/?size=30&id=58761&format=png&color=FFFFFF" alt="" />
                     <span>Historial</span>
                 </label>

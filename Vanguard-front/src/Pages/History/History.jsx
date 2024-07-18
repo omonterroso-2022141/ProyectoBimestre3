@@ -2,6 +2,8 @@ import React from 'react'
 import { Navbar } from '../../Components/Navbar'
 import { Sidebar } from '../../Components/Sidebar'
 import { Workspace } from '../../Components/Workspace'
+import Lottie from 'lottie-react'
+import checkAnimation from '../../Assets/Animation - 1720164249273.json'
 
 export const History = () => {
     return (
@@ -10,7 +12,7 @@ export const History = () => {
             <div style={{ display: 'flex' }}>
                 <Sidebar />
                 <Workspace>
-                    <div>History</div>
+                    <h1>Historial</h1>
                 </Workspace>
             </div>
         </>

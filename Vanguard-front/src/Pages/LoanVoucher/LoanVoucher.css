@@ -1,0 +1,26 @@
+.button-voucher{
+    background-color: #22C063;
+    font-family: 'Open Sans', sans-serif;
+    width: 15em;
+    height: 2.5em;
+    font-size: x-large;
+    font-weight: bolder;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    margin-top: 3vh;
+}
+
+.congratulations{
+    font-size: xx-large;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 3vh;
+}
+
+.voucher-text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: larger;
+}
