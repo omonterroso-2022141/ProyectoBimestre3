@@ -1,0 +1,16 @@
+.NavbarBody{
+    margin: 0;
+    background-color: #31363F;
+    height: 5vh;
+    padding-top: 2vh;
+}
+
+.NavbarBody a{
+    color: white;
+    text-decoration: none;
+    margin-top: 5vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.3vh;
+}
