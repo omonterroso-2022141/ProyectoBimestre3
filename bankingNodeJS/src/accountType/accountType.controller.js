@@ -1,0 +1,31 @@
+import AccountType from "./accountType.model.js"
+
+export const test = (req, res) =>{
+    return res.send('Hello world')
+}
+
+export const add = async(req, res)=>{
+    try {
+        let data = req.body
+        if(!data) return res.status(404).send({message: 'Data not found'})
+        const existingType = await AccountType.findOne({name: data.name})
+        if(existingType) return res.status(409).send({message: 'Account type already exists.'})
+        let type = new AccountType(data)
+        await type.save()
+        return res.send({message: 'Account type added successfully'})
+    } catch (err) {
+        console.error(err);
+        return res.status(500).send({message: 'Error to add account type'})
+    }
+}
+
+//# Get AccountTypes
+export const getAccountTypes = async(req, res)=>{
+    try {
+        const accountType = await AccountType.find()
+        return res.send(accountType)
+    } catch (err) {
+        console.error(err)
+        return res.status(500).send({message: 'Error to Get Account Types'})
+    }
+}

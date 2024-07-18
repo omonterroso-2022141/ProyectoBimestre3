@@ -1,9 +1,9 @@
-  import { Schema, model } from 'mongoose'
+import { Schema, model } from 'mongoose'
 import Decimal from 'decimal.js'
 
 const cardSchema = new Schema({
-    account:{
-        type: String,
+    cardNumber:{
+        type: Number,
         required: true
     },
     userId:{

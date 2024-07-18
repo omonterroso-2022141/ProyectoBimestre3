@@ -10,11 +10,13 @@ const transactionSchema = new Schema({
         required: true
     },
     toAccount: {
-        type: String,
+        type: Schema.Types.ObjectId,
+        ref: 'Account',
         required: true
     },
     fromAccount: {
-        type: String,
+        type: Schema.Types.ObjectId,
+        ref: 'Account',
         required: true
     },
     amount: {

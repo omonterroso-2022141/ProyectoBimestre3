@@ -1,66 +1,54 @@
 {
     "clientName": "Thunder Client",
-    "collectionName": "BankingSystem",
-    "collectionId": "b0641ab3-1c96-4fe0-b024-387a158038e2",
-    "dateExported": "2024-07-18T19:59:49.087Z",
+    "collectionName": "BankingSystemAdmin",
+    "collectionId": "d0d308a5-859e-4af9-af32-58316e58e6b6",
+    "dateExported": "2024-06-10T21:50:35.855Z",
     "version": "1.2",
     "folders": [
         {
-            "_id": "092c1572-cf41-4b4f-be29-b21b0233608d",
+            "_id": "9a28eda1-f4a3-40e9-8f77-d489b59b499f",
             "name": "User",
             "containerId": "",
-            "created": "2024-07-18T19:29:09.476Z",
+            "created": "2024-06-10T20:28:18.053Z",
             "sortNum": 10000
         },
         {
-            "_id": "21064b41-482a-40ae-99cb-01dd30a9739b",
-            "name": "Transactions",
+            "_id": "a2479bc8-6197-44db-8cea-dfe5cf820aaf",
+            "name": "Account",
             "containerId": "",
-            "created": "2024-07-18T19:29:09.477Z",
+            "created": "2024-06-10T20:28:18.054Z",
             "sortNum": 20000
+        },
+        {
+            "_id": "a8d9109a-2883-442a-b62a-b54a8fdef6e9",
+            "name": "Type Account",
+            "containerId": "",
+            "created": "2024-06-10T20:28:18.055Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "da16937e-5ffe-4a46-8499-66a5227c6fb1",
+            "name": "Movements",
+            "containerId": "",
+            "created": "2024-06-10T20:28:18.056Z",
+            "sortNum": 40000
         }
     ],
     "requests": [
         {
-            "_id": "18e17e73-1493-4810-a07f-beb103558187",
-            "colId": "b0641ab3-1c96-4fe0-b024-387a158038e2",
-            "containerId": "092c1572-cf41-4b4f-be29-b21b0233608d",
-            "name": "Login",
-            "url": "/user/login",
+            "_id": "422d888a-3640-4668-a0cb-14ee71f953a6",
+            "colId": "d0d308a5-859e-4af9-af32-58316e58e6b6",
+            "containerId": "9a28eda1-f4a3-40e9-8f77-d489b59b499f",
+            "name": "Create user",
+            "url": "/user/register",
             "method": "POST",
-            "sortNum": 20000,
-            "created": "2024-07-18T19:29:09.476Z",
-            "modified": "2024-07-18T19:29:09.476Z",
-            "headers": [],
-            "body": {
-                "type": "formencoded",
-                "raw": "",
-                "form": [
-                    {
-                        "name": "username",
-                        "value": "myac"
-                    },
-                    {
-                        "name": "password",
-                        "value": "nLkZXug4wILY"
-                    }
-                ]
-            }
-        },
-        {
-            "_id": "c3fd4f7b-21cd-4709-afc9-10206676d371",
-            "colId": "b0641ab3-1c96-4fe0-b024-387a158038e2",
-            "containerId": "21064b41-482a-40ae-99cb-01dd30a9739b",
-            "name": "Make transaction",
-            "url": "/transactions/transaction",
-            "method": "POST",
-            "sortNum": 60000,
-            "created": "2024-07-18T19:29:09.477Z",
-            "modified": "2024-07-18T19:29:09.477Z",
+            "sortNum": 10000,
+            "created": "2024-06-10T20:28:18.053Z",
+            "modified": "2024-06-10T21:36:35.663Z",
             "headers": [
                 {
                     "name": "token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjgzNjIwNGU5M2Y0YmI2MDA3ODdmOTEiLCJuYW1lIjoiTWlndWVsIiwic3VybmFtZSI6IllhYyIsInVzZXJuYW1lIjoibXlhYyIsIkRQSSI6IjMwMzI1MzcwMzAxMDgiLCJhZGRyZXNzIjoiMWF2IDMtNTQgWm9uYSAxIENpdWRhZCBkZSBHdWF0ZW1hbGEiLCJwaG9uZSI6IjEyMzQ1Njc4IiwiZW1haWwiOiJteWFjQGdtYWlsLmNvbSIsImpvYiI6IlByb2dyYW1hZG9yIiwiaW5jb21lIjoiMTkwMC4wMCIsImlhdCI6MTcyMDE5NTM2NiwiZXhwIjoxNzIwMjA2MTY2fQ.GkmSnvvNHBoS753Unn3cGVs3Y9sCWVC_8cjiYcyDE64"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjYyM2E1OTI4YjFlMTRlZmRmYjU2YmEiLCJuYW1lIjoiQURNSU5CIiwic3VybmFtZSI6IkFETUlOQiIsIkRQSSI6IjEyMzQ1Njc4OTEyMzQiLCJhZGRyZXNzIjoieHh4eHh4eCIsInBob25lIjoieHh4eHh4eHgiLCJlbWFpbCI6Inh4eHh4eHh4Iiwiam9iIjoieHh4eHh4eHgiLCJpbmNvbWUiOiJ4eHh4eHh4eCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxODA1MTg1MiwiZXhwIjoxNzE4MDYyNjUyfQ.fOeJg5Mq-7fUNPIOIBrP1oBqV_GF85_e3vw-rP0t7-Y"
                 }
             ],
             "body": {
@@ -68,42 +56,192 @@
                 "raw": "",
                 "form": [
                     {
-                        "name": "toAccount",
-                        "value": "622547208934"
+                        "name": "name",
+                        "value": "Jose"
                     },
                     {
-                        "name": "fromAccount",
-                        "value": "197303253703"
+                        "name": "surname",
+                        "value": "De Leon"
                     },
                     {
-                        "name": "amount",
-                        "value": "100.50"
+                        "name": "username",
+                        "value": "jdeleon"
+                    },
+                    {
+                        "name": "DPI",
+                        "value": "3216549871234"
+                    },
+                    {
+                        "name": "address",
+                        "value": "1av 3-54 Zona 1 Ciudad de Guatemala"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "email",
+                        "value": "jdeleon@gmail.com"
+                    },
+                    {
+                        "name": "job",
+                        "value": "Constructor"
+                    },
+                    {
+                        "name": "income",
+                        "value": "3000.00"
                     }
                 ]
             }
         },
         {
-            "_id": "a4f8b75e-6cc9-487e-a51f-d18b91b1a90b",
-            "colId": "b0641ab3-1c96-4fe0-b024-387a158038e2",
-            "containerId": "21064b41-482a-40ae-99cb-01dd30a9739b",
-            "name": "list my transactions",
-            "url": "/transactions/listMyTransactions",
+            "_id": "fe152f7c-698a-493c-8fb1-825225378420",
+            "colId": "d0d308a5-859e-4af9-af32-58316e58e6b6",
+            "containerId": "9a28eda1-f4a3-40e9-8f77-d489b59b499f",
+            "name": "Login admin",
+            "url": "/admin/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-06-10T20:28:18.054Z",
+            "modified": "2024-06-10T20:28:18.054Z",
+            "headers": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "ADMINB"
+                    },
+                    {
+                        "name": "password",
+                        "value": "ADMINB"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "584b95f4-9d18-4967-9e13-8fd6df1136b4",
+            "colId": "d0d308a5-859e-4af9-af32-58316e58e6b6",
+            "containerId": "a8d9109a-2883-442a-b62a-b54a8fdef6e9",
+            "name": "Add",
+            "url": "/type/add",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-06-10T20:28:18.055Z",
+            "modified": "2024-06-10T20:28:18.055Z",
+            "headers": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Cuenta corriente (De cheques)"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Cuenta destinada a la acumulación de ahorros. Ofrece intereses sobre el saldo mantenido en la cuenta."
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "5f968692-1a32-4234-a3fd-f774c9bdfb63",
+            "colId": "d0d308a5-859e-4af9-af32-58316e58e6b6",
+            "containerId": "a2479bc8-6197-44db-8cea-dfe5cf820aaf",
+            "name": "Create account",
+            "url": "/account/create",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-06-10T20:28:18.056Z",
+            "modified": "2024-06-10T20:28:18.056Z",
+            "headers": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "userId",
+                        "value": "665c0bca1aa90946f93c764c"
+                    },
+                    {
+                        "name": "accountType",
+                        "value": "665b5c6b318c6bee1a10b569"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "a241ab7b-0fb1-48a4-aff7-3c99730cb83e",
+            "colId": "d0d308a5-859e-4af9-af32-58316e58e6b6",
+            "containerId": "9a28eda1-f4a3-40e9-8f77-d489b59b499f",
+            "name": "List users",
+            "url": "/user/listUsers",
             "method": "GET",
             "sortNum": 80000,
-            "created": "2024-07-18T19:29:09.478Z",
-            "modified": "2024-07-18T19:29:09.478Z",
+            "created": "2024-06-10T20:28:18.058Z",
+            "modified": "2024-06-10T20:28:18.058Z",
             "headers": [
                 {
                     "name": "token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjY2NWI0NTQ2ZDBiNjdjNDFjZmQyNWEiLCJuYW1lIjoiV2lsbGlhbSIsInN1cm5hbWUiOiJMb3BleiIsInVzZXJuYW1lIjoid2xvcGV6IiwiRFBJIjoiNTQ3MjA4OTM0MDEwOCIsImFkZHJlc3MiOiIxYXYgMy01NCBab25hIDEgQ2l1ZGFkIGRlIEd1YXRlbWFsYSIsInBob25lIjoiMTIzNDU2NzgiLCJlbWFpbCI6IndhbHZhcmFkb0BnbWFpbC5jb20iLCJqb2IiOiJDb25zdHJ1Y3RvciIsImluY29tZSI6IjkwMC4wMCIsImlhdCI6MTcxODUwMzczNiwiZXhwIjoxNzE4NTE0NTM2fQ.1n5PfBuIUr_yvct_oNN96s2PvBPTKgfZHAK1ahFmUPo"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjYyN2E2ODViN2FmMGY4YjI1MmVmNjAiLCJuYW1lIjoiQURNSU5CIiwic3VybmFtZSI6IkFETUlOQiIsIkRQSSI6IjEyMzQ1Njc4OTEyMzQiLCJhZGRyZXNzIjoieHh4eHh4eCIsInBob25lIjoieHh4eHh4eHgiLCJlbWFpbCI6Inh4eHh4eHh4Iiwiam9iIjoieHh4eHh4eHgiLCJpbmNvbWUiOiJ4eHh4eHh4eCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxNzk4NDA1OSwiZXhwIjoxNzE3OTk0ODU5fQ.pbaM2yruCaqMjIp86-XN3DcSzJ6iQHlIKjZ1C3mhu3s"
+                }
+            ]
+        },
+        {
+            "_id": "8195c50a-4603-46e0-9be2-7faf50fcc9df",
+            "colId": "d0d308a5-859e-4af9-af32-58316e58e6b6",
+            "containerId": "9a28eda1-f4a3-40e9-8f77-d489b59b499f",
+            "name": "Update user",
+            "url": "/user/updateUser/66665b4546d0b67c41cfd25a",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2024-06-10T20:28:18.059Z",
+            "modified": "2024-06-10T20:28:18.059Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjYyN2E2ODViN2FmMGY4YjI1MmVmNjAiLCJuYW1lIjoiQURNSU5CIiwic3VybmFtZSI6IkFETUlOQiIsIkRQSSI6IjEyMzQ1Njc4OTEyMzQiLCJhZGRyZXNzIjoieHh4eHh4eCIsInBob25lIjoieHh4eHh4eHgiLCJlbWFpbCI6Inh4eHh4eHh4Iiwiam9iIjoieHh4eHh4eHgiLCJpbmNvbWUiOiJ4eHh4eHh4eCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxNzk5OTYzOCwiZXhwIjoxNzE4MDEwNDM4fQ.WGql-q16IqriGEYMFEfIRwk3G_X1Eo0bZng_olRqiZ0"
+                }
+            ],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "surname",
+                        "value": "Lopez"
+                    },
+                    {
+                        "name": "username",
+                        "value": "wlopez"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "5ac3b823-2ff0-4a10-a4b2-cccef1c99859",
+            "colId": "d0d308a5-859e-4af9-af32-58316e58e6b6",
+            "containerId": "9a28eda1-f4a3-40e9-8f77-d489b59b499f",
+            "name": "Delete user",
+            "url": "/user/deleteUser/66669d986711e69b8d1a4d28",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2024-06-10T20:28:18.060Z",
+            "modified": "2024-06-10T20:28:18.060Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjYyN2E2ODViN2FmMGY4YjI1MmVmNjAiLCJuYW1lIjoiQURNSU5CIiwic3VybmFtZSI6IkFETUlOQiIsIkRQSSI6IjEyMzQ1Njc4OTEyMzQiLCJhZGRyZXNzIjoieHh4eHh4eCIsInBob25lIjoieHh4eHh4eHgiLCJlbWFpbCI6Inh4eHh4eHh4Iiwiam9iIjoieHh4eHh4eHgiLCJpbmNvbWUiOiJ4eHh4eHh4eCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxODAwMTAzOSwiZXhwIjoxNzE4MDExODM5fQ.07zCcKu0BgSc1qr7cC7leRSJnCB-1jnZeiBEUKWwvYc"
                 }
             ]
         }
     ],
     "settings": {
         "options": {
-            "baseUrl": "localhost:2880"
+            "baseUrl": "localhost:2656"
         }
     },
-    "ref": "L-zrs7xgC8XbXy7Yy6sdt6bQB7d69xBX2ZodYgZqN8IenINCiXj9WO1aG19QzK4utre-27uQmxHXyUFAm8zz3Q"
+    "ref": "v74C1Ltfy1fXJTcNkZTN1DSIQN73wIZCeO1sKmB5bpxZ13ILcYbAa8RjYs19Uy9pPmv2sW8hsaFkLKWCGR7LZA"
 }

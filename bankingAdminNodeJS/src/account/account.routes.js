@@ -7,7 +7,9 @@ import { validateJwt, isAdmin } from '../middlewares/validate.jwt.js'
 const api = express.Router()
 
 api.get('/test', test)
-api.post('/create', [validateJwt, isAdmin], createAccount)
+api.post('/create', /* [validateJwt, isAdmin], */ createAccount)
+
+
 
 
 
