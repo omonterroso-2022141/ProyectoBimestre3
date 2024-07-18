@@ -3,50 +3,66 @@
 import { Schema, model } from 'mongoose'
 
 const userSchema = Schema({
-    name:{
+    name: {
         type: String,
         required: true
     },
-    surname:{
+    surname: {
         type: String,
         required: true
     },
-    username:{
+    username: {
         type: String,
         required: true
     },
-    DPI:{
+    DPI: {
         type: String,
         required: true,
         minLength: 13,
         maxLength: 13
     },
-    address:{
+    address: {
         type: String,
         required: true
     },
-    phone:{
+    phone: {
         type: String,
         minLength: 8,
         maxLength: 8,
         required: true
     },
-    email:{
+    email: {
         type: String,
         required: true
     },
-    password:{
+    password: {
         type: String,
         required: true
     },
-    job:{
+    job: {
         type: String,
         required: true
     },
-    income:{
+    income: {
         type: String,
         required: true
     },
+    thirdPAccounts: [{
+        account: {
+            type: String,
+            ref: 'Account'
+        },
+        favorite: {
+            type: Boolean,
+            default: false
+        },
+        alias: {
+            type: String
+        },
+        accountType: {
+            type: Schema.ObjectId
+        }
+    }]
 }, {
     versionKey: false
 })

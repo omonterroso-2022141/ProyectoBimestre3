@@ -1,79 +1,48 @@
 {
     "clientName": "Thunder Client",
     "collectionName": "BankingSystem",
-    "collectionId": "94e88087-2cf2-4175-b6c5-465ce647bd0b",
-    "dateExported": "2024-07-05T17:22:29.473Z",
+    "collectionId": "37f5c5ce-f09c-4942-96aa-52a7aa5ef7a7",
+    "dateExported": "2024-06-10T21:50:46.847Z",
     "version": "1.2",
     "folders": [
         {
-            "_id": "6f8f7f5e-d451-4732-8403-33a16df2b7ee",
+            "_id": "69819a23-285c-405d-b567-5285997a1887",
             "name": "User",
             "containerId": "",
-            "created": "2024-06-11T03:02:31.298Z",
+            "created": "2024-06-10T20:28:26.686Z",
             "sortNum": 10000
         },
         {
-            "_id": "6a8c1324-452d-4fc5-b658-69709aaf462a",
-            "name": "Transactions",
+            "_id": "10002919-0746-493d-b893-78f291e2d171",
+            "name": "Movements",
             "containerId": "",
-            "created": "2024-06-11T03:14:27.203Z",
+            "created": "2024-06-10T20:35:08.864Z",
             "sortNum": 20000
         }
     ],
     "requests": [
         {
-            "_id": "80ead73c-e301-48ce-b6a3-ab345c1d04d0",
-            "colId": "94e88087-2cf2-4175-b6c5-465ce647bd0b",
-            "containerId": "6f8f7f5e-d451-4732-8403-33a16df2b7ee",
-            "name": "Login",
-            "url": "/user/login",
+            "_id": "0768038d-81f8-4748-9f9f-f510fd1d7a58",
+            "colId": "37f5c5ce-f09c-4942-96aa-52a7aa5ef7a7",
+            "containerId": "10002919-0746-493d-b893-78f291e2d171",
+            "name": "Make transaction",
+            "url": "/transactions/transaction",
             "method": "POST",
-            "sortNum": 20000,
-            "created": "2024-06-11T03:02:31.298Z",
-            "modified": "2024-07-04T16:45:15.201Z",
+            "sortNum": 10000,
+            "created": "2024-06-10T20:35:13.617Z",
+            "modified": "2024-06-10T20:35:13.617Z",
             "headers": [],
             "body": {
                 "type": "formencoded",
                 "raw": "",
                 "form": [
                     {
-                        "name": "username",
-                        "value": "myac"
-                    },
-                    {
-                        "name": "password",
-                        "value": "nLkZXug4wILY"
-                    }
-                ]
-            }
-        },
-        {
-            "_id": "272ec24a-47b2-4678-ae24-5cbd1e29a28f",
-            "colId": "94e88087-2cf2-4175-b6c5-465ce647bd0b",
-            "containerId": "6a8c1324-452d-4fc5-b658-69709aaf462a",
-            "name": "Make transaction",
-            "url": "/transactions/transaction",
-            "method": "POST",
-            "sortNum": 60000,
-            "created": "2024-06-11T03:14:27.221Z",
-            "modified": "2024-07-05T16:50:02.880Z",
-            "headers": [
-                {
-                    "name": "token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjgzNjIwNGU5M2Y0YmI2MDA3ODdmOTEiLCJuYW1lIjoiTWlndWVsIiwic3VybmFtZSI6IllhYyIsInVzZXJuYW1lIjoibXlhYyIsIkRQSSI6IjMwMzI1MzcwMzAxMDgiLCJhZGRyZXNzIjoiMWF2IDMtNTQgWm9uYSAxIENpdWRhZCBkZSBHdWF0ZW1hbGEiLCJwaG9uZSI6IjEyMzQ1Njc4IiwiZW1haWwiOiJteWFjQGdtYWlsLmNvbSIsImpvYiI6IlByb2dyYW1hZG9yIiwiaW5jb21lIjoiMTkwMC4wMCIsImlhdCI6MTcyMDE5NTM2NiwiZXhwIjoxNzIwMjA2MTY2fQ.GkmSnvvNHBoS753Unn3cGVs3Y9sCWVC_8cjiYcyDE64"
-                }
-            ],
-            "body": {
-                "type": "formencoded",
-                "raw": "",
-                "form": [
-                    {
                         "name": "toAccount",
-                        "value": "622547208934"
+                        "value": "665c15900dbb4c10f5f9df3a"
                     },
                     {
-                        "name": "fromAccount",
-                        "value": "197303253703"
+                        "name": "forAccount",
+                        "value": "665bafd028336b7e5ccc2ff5"
                     },
                     {
                         "name": "amount",
@@ -83,21 +52,30 @@
             }
         },
         {
-            "_id": "178c096d-bbe9-42c9-92ad-6e274b25030e",
-            "colId": "94e88087-2cf2-4175-b6c5-465ce647bd0b",
-            "containerId": "6a8c1324-452d-4fc5-b658-69709aaf462a",
-            "name": "list my transactions",
-            "url": "/transactions/listMyTransactions",
-            "method": "GET",
-            "sortNum": 80000,
-            "created": "2024-06-15T06:05:40.966Z",
-            "modified": "2024-06-16T02:09:05.111Z",
-            "headers": [
-                {
-                    "name": "token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjY2NWI0NTQ2ZDBiNjdjNDFjZmQyNWEiLCJuYW1lIjoiV2lsbGlhbSIsInN1cm5hbWUiOiJMb3BleiIsInVzZXJuYW1lIjoid2xvcGV6IiwiRFBJIjoiNTQ3MjA4OTM0MDEwOCIsImFkZHJlc3MiOiIxYXYgMy01NCBab25hIDEgQ2l1ZGFkIGRlIEd1YXRlbWFsYSIsInBob25lIjoiMTIzNDU2NzgiLCJlbWFpbCI6IndhbHZhcmFkb0BnbWFpbC5jb20iLCJqb2IiOiJDb25zdHJ1Y3RvciIsImluY29tZSI6IjkwMC4wMCIsImlhdCI6MTcxODUwMzczNiwiZXhwIjoxNzE4NTE0NTM2fQ.1n5PfBuIUr_yvct_oNN96s2PvBPTKgfZHAK1ahFmUPo"
-                }
-            ]
+            "_id": "63fbaa30-98ab-4b6f-8aa1-1469b856b4de",
+            "colId": "37f5c5ce-f09c-4942-96aa-52a7aa5ef7a7",
+            "containerId": "69819a23-285c-405d-b567-5285997a1887",
+            "name": "Login",
+            "url": "/user/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-06-10T20:28:26.686Z",
+            "modified": "2024-06-10T20:28:26.686Z",
+            "headers": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "walvarado"
+                    },
+                    {
+                        "name": "password",
+                        "value": "XeaRsqDLLsfT"
+                    }
+                ]
+            }
         }
     ],
     "settings": {
@@ -105,5 +83,5 @@
             "baseUrl": "localhost:2880"
         }
     },
-    "ref": "1rGlkRtsA-5vDcwaWFhuXDeAdto9A8VLYLYUFMmqQkBt8h8YUNRu997Nu7-bXg0QQF8tzGplJMcuzpU5bfqRlA"
+    "ref": "nHgGLf095R_UzY297o4U2p24O1-5_hvG0XUA8IaPV7KGvIvfL3tZTw-FOycWa2FlsWzVpWbIPMZ5rFZRVKDZ7Q"
 }
