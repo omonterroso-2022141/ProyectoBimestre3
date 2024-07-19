@@ -1,0 +1,16 @@
+.card-promotion{
+    text-align: center;
+    background-color: #a5211d;
+    width: 25vh;
+    height: auto;
+    color: white;
+    font-weight: bold;
+}
+
+.card-promotion img{
+    transition: transform 0.3s ease;
+}
+
+.card-promotion:hover img{
+    transform: translateY(-30px) rotate(-20deg) scale(1.5);
+}

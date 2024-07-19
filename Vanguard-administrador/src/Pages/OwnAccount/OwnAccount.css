@@ -1,0 +1,42 @@
+.ownaccount-container {
+    display: grid;
+    grid-template-columns: 45vh auto;
+    margin: 3vh;
+}
+
+input[type='number'] {
+    width: 20vh;
+}
+
+.select-transfer {
+    width: 30vh;
+    margin-bottom: 1em;
+}
+
+.transfer-description {
+    display: grid;
+    width: auto;
+    margin-left: 3vh;
+}
+
+.transfer-description textarea {
+    width: 40vh;
+    height: 10vh;
+    resize: none;
+}
+
+.next-button {
+    background-color: #22C063;
+    font-family: 'Open Sans', sans-serif;
+    width: 8em;
+    height: 2.1em;
+    font-size: x-large;
+    font-weight: bolder;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    margin-top: 5vh;
+    margin-left: 3vh;
+}
