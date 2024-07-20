@@ -77,7 +77,7 @@ export const Sidebar = () => {
             <div className='sidebar-content'>
                 <img style={{ width: '12vh', alignSelf: 'center' }} src="https://img.icons8.com/?size=100&id=7819&format=png&color=FFFFFF" />
                 <span onClick={navigateToUserInfo} style={{ textAlign: 'center' }}>Username: {username}</span>
-                <span style={{ marginLeft: '1vh' }}>Discover</span>
+                <span style={{ marginLeft: '1vh', textAlign: 'center', marginTop: '3vh', fontSize: '2vw'}}>Discover</span>
 
                 <label onClick={navigateToAccounts} style={{ backgroundColor: selectedOption === 'crateaccounts' ? '#76ABAE' : '' }}>
                     <input type="radio" value="createaccounts" checked={selectedOption === 'createaccounts'} onChange={handleOptionChange} />

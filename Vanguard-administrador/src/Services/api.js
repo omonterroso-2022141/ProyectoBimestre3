@@ -98,16 +98,21 @@ export const makeTransferOwn = async (fromId, toID, amount) => {
     }
 }
 
-export const listTransfers = async()=>{
+export const getTransfers = async () => {
     try {
-        
+        const response = await apiClient.get('/transactions/listTransactions', {
+            headers: {
+                token: localStorage.getItem('token')
+            }
+        });
+        return { data: response.data, error: false };
     } catch (err) {
         return {
             error: true,
-            err: err
-        }
+            err: err.message
+        };
     }
-}
+};
 
 export const getThirdPAccunts = async ()=>{
     try {
